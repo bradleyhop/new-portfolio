@@ -68,7 +68,7 @@ const projects = {
         title: "Responsive Web Design Certification",
         link: "https://www.freecodecamp.org/certification/bradleyhop/responsive-web-design",
         img: {
-          src: "assets/responsiveCert.png",
+          src: "assets/screenshots/responsiveCert.png",
           alt: "certificate for responsive web design",
         },
         githubLink: ""
@@ -77,7 +77,7 @@ const projects = {
         title: "Personal Profile",
         link: "https://bradleyhop.github.io/",
         img: {
-          src: "assets/portfolio.png",
+          src: "assets/screenshots/portfolio.png",
           alt: "screenshot of portfolio webpage",
         },
         githubLink: "https://github.com/bradleyhop/bradleyhop.github.io",
@@ -86,7 +86,7 @@ const projects = {
         title: "Technical Documentation" ,
         link: "https://bradleyhop.github.io/techDoc/techDoc.html",
         img: {
-          src: "assets/fccTechDoc.png",
+          src: "assets/screenshots/fccTechDoc.png",
           alt: "screenshot of technical documentation project",
         },
         githubLink: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/techDoc",
@@ -95,7 +95,7 @@ const projects = {
         title: "Product Landing Page",
         link: "https://bradleyhop.github.io/productLandingPage/productLandingPage.html",
         img: {
-          src: "assets/fccProductLanding.png",
+          src: "assets/screenshots/fccProductLanding.png",
           alt: "screenshot of product landing page",
         },
         github: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/productLandingPage",
@@ -104,7 +104,7 @@ const projects = {
         title: "Survey Form",
         link: "https://bradleyhop.github.io/surveyForm/surveyForm.html",
         img: {
-          src: "assets/survey.png",
+          src: "assets/screenshots/survey.png",
           alt: "screenshot of survey form",
         },
         github: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/surveyForm",
@@ -113,7 +113,7 @@ const projects = {
         title: "Tribute",
         link: "https://bradleyhop.github.io/tribute/tribute.html",
         img: {
-          src: "assets/tribute.png",
+          src: "assets/screenshots/tribute.png",
           alt: "screenshot of tribute webpage to Frankie Manning",
         },
         github: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/tribute",
@@ -128,7 +128,7 @@ const projects = {
         title: "Javascript Algorithms and Data Structures" ,
         link: "https://github.com/bradleyhop/freeCodeCampAlgorithms",
         img: {
-          src: "assets/jsCert.png",
+          src: "assets/screenshots/jsCert.png",
           alt: "javascript algorithm certification",
         },
         github: "https://github.com/bradleyhop/freeCodeCampAlgorithms",
@@ -143,7 +143,7 @@ const projects = {
         title: "Front End Libraries Certification",
         link: "https://www.freecodecamp.org/certification/bradleyhop/front-end-libraries",
         img: {
-          src: "assets/frontEndLibraries.png",
+          src: "assets/screenshots/frontEndLibraries.png",
           alt: "screenshot of front end libraries certificate",
         },
         github: "https://github.com/bradleyhop",
@@ -152,7 +152,7 @@ const projects = {
         title: "Pomodoro Timer",
         link: "https://bradleyhop.github.io/pomodoroTimer/",
         img: {
-          src: "assets/pomodoroTimer.png",
+          src: "assets/screenshots/pomodoroTimer.png",
           alt: "screenshot of pomodoro timer app",
         },
         github: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/pomodoro-timer/",
@@ -161,7 +161,7 @@ const projects = {
         title: "Javascript Calculator",
         link: "https://bradleyhop.github.io/js-calculator/",
         img: {
-          src: "assets/js-calculator.png",
+          src: "assets/screenshots/js-calculator.png",
           alt: "screenshot of markdown to javascript calculator",
         },
         github: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/js-calculator/",
@@ -170,7 +170,7 @@ const projects = {
         title: "Drum Machine",
         link: "https://bradleyhop.github.io/drumMachine/",
         img: {
-          src: "assets/drum-machine.png",
+          src: "assets/screenshots/drum-machine.png",
           alt: "screenshot of game boy inspired drum machine",
         },
         github: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/drum-machine/",
@@ -179,7 +179,7 @@ const projects = {
         title: "Markdown Previewer",
         link: "https://bradleyhop.github.io/markdownPreviewer/markdownPre.html",
         img: {
-          src: "assets/markdownPreviewer.png",
+          src: "assets/screenshots/markdownPreviewer.png",
           alt: "screenshot of markdown to html previewer",
         },
         github: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/markdownPreviewer/",
@@ -188,7 +188,7 @@ const projects = {
         title: "Random Quote Machine",
         link: "https://bradleyhop.github.io/randomQuotes/randomQuote.html",
         img: {
-          src: "assets/randomQuoteGenerator.png",
+          src: "assets/screenshots/randomQuoteGenerator.png",
           alt: "screenshot of random quote machine",
         },
         github: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/randomQuotes/",
@@ -203,7 +203,7 @@ const projects = {
         title: "Post-Rock Band Name Generator" ,
         link: "https://bradleyhop.github.io/postRockBandName/",
         img: {
-          src: "assets/postrock-bandname.jpg",
+          src: "assets/screenshots/postrock-bandname.jpg",
           alt: "screenshot of post rock band name quiz",
         },
         github: "https://github.com/bradleyhop/postrock-bandname/",
@@ -212,7 +212,7 @@ const projects = {
         title: "Terminal Quote Generator",
         link: "https://bradleyhop.github.io/randomQuotes/extraCreditRQ/random.html",
         img: {
-          src: "assets/terminalQuote.png",
+          src: "assets/screenshots/terminalQuote.png",
           alt: "screenshot of terminal style random quote generator",
         },
         github: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/randomQuotes/extraCreditRQ/",
@@ -221,7 +221,7 @@ const projects = {
         title: "Wikipedia Article Search and Preview" ,
         link: "https://bradleyhop.github.io/wikiSearchApp/",
         img: {
-          src: "assets/wikiSearchApp.png",
+          src: "assets/screenshots/wikiSearchApp.png",
           alt: "screenshot of wikipedia search and preview article application",
         },
         github: "https://github.com/bradleyhop/wikiSearchApp/",
