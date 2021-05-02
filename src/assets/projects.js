@@ -1,3 +1,7 @@
+/*
+ * projects variable which holds data on each freeCodeCamp module and project that I have completed
+ */
+
 const projects = {
   d3: {
     title: "Data Visualization with D3",
@@ -230,4 +234,4 @@ const projects = {
   }
 };
 
-console.log(projects.responsiveWebDesign.projects.img.src);
+export default projects;

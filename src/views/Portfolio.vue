@@ -1,10 +1,14 @@
 <script>
-import PortCard from '@/components/PortCard.vue';
+import ExpansionPanel from '@/components/ExpansionPanel.vue';
+import projects from '@/assets/projects.js';
 
 export default {
   name: 'Portfolio',
   components: {
-    PortCard,
+    ExpansionPanel,
+  },
+  created() {
+    console.log(projects);
   },
 };
 </script>
@@ -15,7 +19,8 @@ export default {
     fluid>
     <v-row>
       <v-col>
-        <PortCard />
+        <h2>freeCodeCamp</h2>
+        <ExpansionPanel />
       </v-col>
     </v-row>
   </v-container>
