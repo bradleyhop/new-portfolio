@@ -17,46 +17,49 @@ export default {
       v-model="drawer"
       app
       right
+      temporary
       >
       <v-list dense>
 
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon color="secondary">mdi-home</v-icon>
-          </v-list-item-action>
+        <router-link :to="{ name: 'Home' }">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon color="secondary">mdi-home</v-icon>
+            </v-list-item-action>
 
-          <v-list-item-content>
-            <v-list-item-title>
-              <router-link :to="{ name: 'Home' }">
+            <v-list-item-content>
+              <v-list-item-title>
                 Home
-              </router-link>
-            </v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </router-link>
 
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon color="secondary">mdi-code-tags</v-icon>
-          </v-list-item-action>
+        <router-link :to="{ name: 'Portfolio' }">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon color="secondary">mdi-code-tags</v-icon>
+            </v-list-item-action>
 
-          <v-list-item-content>
-            <router-link :to="{ name: 'Portfolio' }">
+            <v-list-item-content>
               <v-list-item-title>
                 Portfolio
               </v-list-item-title>
-            </router-link>
-          </v-list-item-content>
-        </v-list-item>
+            </v-list-item-content>
+          </v-list-item>
+        </router-link>
 
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon color="secondary">mdi-email</v-icon>
-          </v-list-item-action>
+        <router-link :to="{ name: 'Contact' }">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon color="secondary">mdi-email</v-icon>
+            </v-list-item-action>
 
-          <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+            <v-list-item-content>
+              <v-list-item-title>Contact</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </router-link>
 
       </v-list>
     </v-navigation-drawer>
@@ -83,3 +86,9 @@ export default {
     </v-footer>
   </v-app>
 </template>
+
+<style lang="scss">
+a {
+  text-decoration: none;
+}
+</style>>

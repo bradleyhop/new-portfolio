@@ -79,6 +79,7 @@ export default {
           <v-img
             class="rounded-circle elevation-6"
             src="@/assets/me.jpg"
+            alt="portrait of me looking confident"
             height="14em"
             width="14em"
             >
