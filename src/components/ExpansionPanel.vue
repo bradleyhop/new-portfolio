@@ -1,26 +1,22 @@
 <script>
-import projects from '@/assets/projects.js';
+import ouvre from '@/assets/projects.js';
 
 export default {
   name: 'ExpansionPanel',
   data() {
     return {
-      projectListings: projects, // project data to iterate
+      projectListings: ouvre, // project data to iterate
     }
   },
-  methods: {
-    imgSrc(src) {
-      return src;
-    }
-  },
+
 };
 </script>
 
 <template>
   <v-expansion-panels>
     <v-expansion-panel
-      v-for="item in projectListings"
-      :key="item.i"
+      v-for="(item, i) in projectListings"
+      :key="i"
     >
       <v-expansion-panel-header>
         {{ item.title }}
@@ -30,18 +26,19 @@ export default {
         <!-- nested expansion panels for projects -->
         <v-expansion-panels>
           <v-expansion-panel
-              v-for="projectItem in item.projects"
-              :key="projectItem.i"
+              v-for="(projectItem, j) in item.projects"
+              :key="j"
               >
               <v-expansion-panel-header>
                 {{ projectItem.title }}
               </v-expansion-panel-header>
             <v-expansion-panel-content>
+              <!-- TODO: ask how to link in images -->
               <v-img
-                  :src="projectItem.img.src"
-                  :alt="projectItem.img.alt"
+                  :src="require(`@/assets/screenshots/${projectItem.img.src}`)"
+                  alt=""
                   :aspect-ratio="16/9"
-                  width="100px"
+                  width="18em"
                   >
               </v-img>
                 <a :href="projectItem.github"
