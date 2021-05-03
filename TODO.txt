@@ -1,4 +1,4 @@
 take screenshots of d3 projects
 configure the img-loader with the image compression plugins
 fix asset links
-start dropdown dynamic rendering
+x start dropdown dynamic rendering
