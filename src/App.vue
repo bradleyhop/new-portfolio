@@ -17,6 +17,7 @@ export default {
       v-model="drawer"
       app
       right
+      temporary
       >
       <v-list dense>
 

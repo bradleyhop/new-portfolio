@@ -5,20 +5,21 @@ export default {
   name: 'ExpansionPanel',
   data() {
     return {
-      projectHeading: projects,
+      projectListings: projects, // project data to iterate
+    }
+  },
+  methods: {
+    imgSrc(src) {
+      return src;
     }
   },
 };
 </script>
 
 <template>
-  <v-row>
-    <v-col
-      lg="8" sm="12"
-      >
   <v-expansion-panels>
     <v-expansion-panel
-      v-for="item in projectHeading"
+      v-for="item in projectListings"
       :key="item.i"
     >
       <v-expansion-panel-header>
@@ -36,12 +37,19 @@ export default {
                 {{ projectItem.title }}
               </v-expansion-panel-header>
             <v-expansion-panel-content>
-              <a :href="projectItem.link"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                gitHub
-              </a>
+              <v-img
+                  :src="projectItem.img.src"
+                  :alt="projectItem.img.alt"
+                  :aspect-ratio="16/9"
+                  width="100px"
+                  >
+              </v-img>
+                <a :href="projectItem.github"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  gitHub
+                </a>
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
@@ -49,8 +57,6 @@ export default {
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>
-  </v-col>
-  </v-row>
 </template>
 
 <style lang="scss">

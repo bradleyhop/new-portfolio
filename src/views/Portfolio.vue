@@ -15,12 +15,18 @@ export default {
 
 <template>
   <v-container
-    class="fill-height"
-    fluid>
+      class="fill-height"
+      fluid>
     <v-row>
-      <v-col>
-        <h2>freeCodeCamp</h2>
-        <ExpansionPanel />
+      <v-col
+          class="justify-center col-lg-8 offset-lg-2 col-sm-12"
+          >
+          <h2
+              >
+              freeCodeCamp
+          </h2>
+            <p>This is some basic text to show an explanation for things on this page.</p>
+            <ExpansionPanel />
       </v-col>
     </v-row>
   </v-container>
