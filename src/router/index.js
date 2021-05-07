@@ -26,7 +26,8 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  // default is 'history', but cannot configure gitHub pages to use it
+  // mode: 'hash',
   base: process.env.BASE_URL,
   routes
 });
