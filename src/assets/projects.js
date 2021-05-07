@@ -74,7 +74,7 @@ const ouvre = [
           src: "frontEndLibraries.jpg",
           alt: "screenshot of front end libraries certificate",
         },
-        github: "https://github.com/bradleyhop",
+        github: "",
       },
       {
         title: "Pomodoro Timer",
