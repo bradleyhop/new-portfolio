@@ -26,8 +26,7 @@ const routes = [
   // hopefully, gitHub pages will reload the index file on page refresh or on direct links to views
   {
     path: '/:catchAll(.*)',
-    name: 'Home',
-    component: Home,
+    redirect: '/',
   },
 ];
 
