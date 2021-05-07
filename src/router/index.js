@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
   },
   {
     path: '/portfolio',
@@ -23,11 +23,18 @@ const routes = [
     name: 'Contact',
     component: () => import('@/views/Contact.vue'),
   },
+  // hopefully, gitHub pages will reload the index file on page refresh or on direct links to views
+  {
+    path: '/:catchAll(.*)',
+    name: 'Home',
+    component: Home,
+  },
 ];
 
 const router = new VueRouter({
-  // default is 'history', but cannot configure gitHub pages to use it
-  // mode: 'hash',
+  // default mode is 'hash', but somehow 'history' mode was configured;
+  // cannot configure gitHub pages to use history mode: server configuration required
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 });

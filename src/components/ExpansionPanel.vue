@@ -21,15 +21,15 @@ export default {
         <v-expansion-panel-header>
           {{ item.title }}
           <template v-slot:actions>
-            <v-icon color="primary">$expand</v-icon>
+            <v-icon color="secondary">$expand</v-icon>
           </template>
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          {{ item.copy }}
+          <div class="cert-copy">
+            {{ item.copy }}
+          </div>
           <!-- nested expansion panels for projects -->
-          <v-expansion-panels
-              :popout="true"
-              >
+          <v-expansion-panels>
               <v-expansion-panel
                   v-for="(projectItem, j) in item.projects"
                   :key="j"
@@ -69,7 +69,7 @@ export default {
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   >
-                                  <v-icon size="8rem">
+                                  <v-icon size="8rem" class="icon-link">
                                     mdi-link
                                   </v-icon>
                                   </a>
@@ -79,9 +79,8 @@ export default {
                                    target="_blank"
                                    rel="noopener noreferrer"
                                    >
-                                   <v-icon size="6rem">
-                                     mdi-github
-                                   </v-icon>
+                                   <v-icon size="6rem" class="icon-link">
+                                     mdi-github </v-icon>
                                 </a>
                               </v-overlay>
                             </v-fade-transition>
@@ -101,4 +100,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.cert-copy {
+  margin-bottom: 1em;
+}
+.icon-link:hover {
+  color: black;
+}
 </style>>
