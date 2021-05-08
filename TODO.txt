@@ -1,4 +1,5 @@
-take screenshots of d3 projects
-configure the img-loader with the image compression plugins
-fix asset links
-x start dropdown dynamic rendering
+test asset links
+change default theme colors
+write intro blurb
+write new 'about me'
+choose three top projects to showcase
