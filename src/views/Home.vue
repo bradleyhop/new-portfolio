@@ -17,7 +17,7 @@ export default {
         >
         <v-col class="text-center">
           <h1 class="text-h1">
-            Bradley Smith
+            <span class="white-text">Bradley Smith</span>
           </h1>
         </v-col>
       </v-row>
@@ -91,3 +91,10 @@ export default {
     </v-container>
   </v-main>
 </template>>
+
+<style lang="scss">
+.white-text {
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+</style>>

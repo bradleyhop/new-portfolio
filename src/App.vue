@@ -78,7 +78,6 @@ export default {
 
     <v-footer
       color="primary"
-      app
       >
       <v-spacer></v-spacer>
 
