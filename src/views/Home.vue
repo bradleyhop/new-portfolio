@@ -16,7 +16,7 @@ export default {
         justify="center"
         >
         <v-col class="text-center">
-          <h1 class="text-h1 secondary--text font-weight-thin">
+          <h1 class="text-h1">
             Bradley Smith
           </h1>
         </v-col>

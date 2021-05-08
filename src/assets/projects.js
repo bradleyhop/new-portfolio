@@ -11,8 +11,8 @@ const ouvre = [
         title: "Data Visualization Certification",
         link: "https://www.freecodecamp.org/certification/bradleyhop/data-visualization",
         img: {
-          src: "",
-          alt: "",
+          src: "d3Cert.png",
+          alt: "screenshot of Bradley's freeCodeCamp Data Visualization Certification",
         },
         github: "",
       },

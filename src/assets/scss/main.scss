@@ -1,0 +1,16 @@
+$font-family-Open-Sans: 'Open Sans', sans-serif !important;
+$font-family-Source-Sans: 'Source Sans Pro', sans-serif !important;
+
+.v-application {
+  [class*='text-'] {
+    // color: #36405a;
+    font-family: $font-family-Open-Sans;
+  }
+
+  font-family: $font-family-Open-Sans;
+
+  &.text-h1 {
+    color: blue;
+    font-family: $font-family-Source-Sans;
+  }
+}
