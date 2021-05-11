@@ -19,7 +19,9 @@ export default {
       right
       temporary
       >
-      <v-list dense>
+      <v-list
+        class="view-list"
+        >
 
         <router-link :to="{ name: 'Home' }">
           <v-list-item link>
@@ -83,11 +85,19 @@ export default {
 
       <span class="white--text">bradley smith &copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
+
   </v-app>
 </template>
 
 <style lang="scss">
-a {
-  text-decoration: none;
+// extends veutify class; shows background image on every page view
+.v-application--wrap {
+  background-image: url('assets/dots.png');
+  background-color: #fff;
+  background-repeat: repeat;
+}
+
+.view-list {
+  margin-top: 2rem;
 }
 </style>>

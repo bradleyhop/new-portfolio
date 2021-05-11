@@ -1,23 +1,14 @@
-$font-family-Open-Sans: 'Open Sans', sans-serif !important;
-$font-family-Source-Sans: 'Source Sans Pro', sans-serif !important;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
 
-$body-background: #fff583;
-$primary: #1041fb;
-$secondary: #f80667;
+$Open-Sans: 'Open Sans', sans-serif !important;
+$Source-Sans-Pro: "Source Sans Pro", helvetica, sans-serif !important;
+$Poppins: 'Poppins', helvetica, sans-serif !important;
 
 .v-application {
   [class*='text-'] {
     // color: #36405a;
-    font-family: $font-family-Open-Sans;
+    font-family: $Poppins;
   }
 
-  font-family: $font-family-Open-Sans;
-
-  & .text-h1 {
-    font-family: $font-family-Source-Sans;
-  }
-}
-
-#inspire {
-  background-color: $body-background;
+  font-family: $Poppins;
 }
