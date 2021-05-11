@@ -92,12 +92,11 @@ export default {
 <style lang="scss">
 // extends veutify class; shows background image on every page view
 .v-application--wrap {
-  background-image: url('assets/dots.png');
+  background: url('assets/dots.png') repeat;
   background-color: #fff;
-  background-repeat: repeat;
 }
 
 .view-list {
   margin-top: 2rem;
 }
-</style>>
+</style>
