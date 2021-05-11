@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+// global scss file that mainly overrides vuetify defaults
 
 $Open-Sans: 'Open Sans', sans-serif !important;
 $Source-Sans-Pro: "Source Sans Pro", helvetica, sans-serif !important;
@@ -6,9 +6,12 @@ $Poppins: 'Poppins', helvetica, sans-serif !important;
 
 .v-application {
   [class*='text-'] {
-    // color: #36405a;
     font-family: $Poppins;
   }
 
   font-family: $Poppins;
+}
+
+a {
+  text-decoration: none;
 }

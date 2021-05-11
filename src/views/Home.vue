@@ -15,33 +15,41 @@ export default {
             align="center"
             >
             <v-col
-                class="text-center"
+                offset-lg="2"
+                lg="8"
+                sm="12"
                 >
 
                 <p
                     class="hero-header"
+                    :style="$vuetify.breakpoint.xs ?
+                             'font-size: 2rem' : 'font-size: 3rem'"
                     >
                     Hello, my name is
                     <span
                         class="my-name"
+                        :style="$vuetify.breakpoint.xs ?
+                                 'font-size: 2.5rem' : 'font-size: 3.5rem'"
                         >
                         BRADLEY SMITH
                     </span>
                 </p>
                 <p
                     class="hero-copy"
+                    :style="$vuetify.breakpoint.xs ?
+                             'font-size: 1em' : 'font-size: 1.5em'"
                     >
                     I am a web developer. Not a designer.
                 </p>
 
                 <router-link
-                    to="/portfolio"
+                    :to="{ name: 'Portfolio' }"
                     tag="v-btn"
                     >
                     <v-btn
                         color="secondary"
                         elevation="4"
-                        x-large
+                        large
                         >
                         Portfolio
                     </v-btn>
@@ -61,6 +69,7 @@ export default {
                       alt="portrait of me looking confident"
                       height="16em"
                       width="16em"
+                      cover
                       >
                   </v-img>
               </v-col>
@@ -68,15 +77,15 @@ export default {
 
     </v-container>
   </v-main>
-</template>>
+</template>
 
 <style lang="scss" scoped>
 .hero-header {
-  font-size: 3rem;
   font-family: $Open-Sans;
+  font-weight: 300;
 }
 
-.hero-copy {
-  font-size: 1.5rem;
+.my-name {
+  letter-spacing: 3px;
 }
-</style>>
+</style>
