@@ -26,7 +26,9 @@ export default {
               freeCodeCamp
           </h2>
             <p>This is some basic text to show an explanation for things on this page.</p>
+
             <ExpansionPanel />
+
       </v-col>
     </v-row>
   </v-container>

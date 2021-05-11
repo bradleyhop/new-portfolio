@@ -66,6 +66,7 @@ export default {
                                 <a :href="projectItem.link"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                title="live demo"
                                 >
                                 <v-icon size="8rem" class="icon-link">
                                   mdi-link
@@ -76,6 +77,7 @@ export default {
                                  :href="projectItem.github"
                                  target="_blank"
                                  rel="noopener noreferrer"
+                                 title="source code"
                                  >
                                  <v-icon size="6rem" class="icon-link">
                                    mdi-github
@@ -100,7 +102,12 @@ export default {
 .cert-copy {
   margin-bottom: 1em;
 }
-.icon-link:hover {
+
+.icon-link {
+  margin: 1rem;
+
+  &:hover {
   color: black;
+}
 }
 </style>>

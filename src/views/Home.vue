@@ -7,94 +7,76 @@ export default {
 <template>
   <v-main>
     <v-container
-      class="fill-height"
-      fluid
-      >
-
-      <v-row
-        align="center"
-        justify="center"
+        class="fill-height"
+        fluid
         >
-        <v-col class="text-center">
-          <h1 class="text-h1">
-            <span class="white-text">Bradley Smith</span>
-          </h1>
-        </v-col>
-      </v-row>
 
-      <v-row
-        align="center"
-        justify="center"
-        >
-        <v-col
-          class="text-center"
-          lg="6"
-          xs="10"
-          >
-          <p>I am a self-taught web developer using
-            <a
-              href="https://freecodecamp.org/bradleyhop"
-              style="color: #00641f;"
-              >
-              freeCodeCamp
-            </a>
-              as my main learning resource. I am proficient in html, css, and javascript
-              while also utilizing tools like: flexbox and grid in css,
-            <a
-              href="https://sass-lang.com"
-              style="color: #cf649a;"
-              >
-              Sass
-            </a>
-              to help me write responsive content, and
-            <a
-              href="https://vuejs.org"
-              style="color: #41b883;"
-              >
-              Vue.js
-            </a>
-              to build webpages using
-            <a href="https://cli.vuejs.org" style="color: #35495e;">
-              Vue CLI
-            </a>.
-              I upload my work to my
-            <a
-              href="https://github.com/bradleyhop"
-              style="color: #24292e;"
-              >
-              github
-            </a>
-              which also serves the webpages live via github pages.
-          </p>
-
-        </v-col>
-      </v-row>
-
-      <v-row>
-        <v-col
-          align="center"
-          justify="center"
-          >
-
-          <v-img
-            class="rounded-circle elevation-6"
-            src="@/assets/me.jpg"
-            alt="portrait of me looking confident"
-            height="14em"
-            width="14em"
+        <v-row
+            align="center"
             >
-          </v-img>
+            <v-col
+                class="text-center"
+                >
 
-        </v-col>
-      </v-row>
+                <p
+                    class="hero-header"
+                    >
+                    Hello, my name is
+                    <span
+                        class="my-name"
+                        >
+                        BRADLEY SMITH
+                    </span>
+                </p>
+                <p
+                    class="hero-copy"
+                    >
+                    I am a web developer. Not a designer.
+                </p>
+
+                <router-link
+                    to="/portfolio"
+                    tag="v-btn"
+                    >
+                    <v-btn
+                        color="secondary"
+                        elevation="4"
+                        x-large
+                        >
+                        Portfolio
+                    </v-btn>
+                </router-link>
+
+            </v-col>
+        </v-row>
+
+          <v-row
+              >
+              <v-col
+                  align="center"
+                  >
+                  <v-img
+                      class="rounded-circle elevation-6"
+                      src="@/assets/me.jpg"
+                      alt="portrait of me looking confident"
+                      height="16em"
+                      width="16em"
+                      >
+                  </v-img>
+              </v-col>
+          </v-row>
 
     </v-container>
   </v-main>
 </template>>
 
-<style lang="scss">
-.white-text {
-  color: #fff;
-  text-shadow: 1px 1px 2px #000;
+<style lang="scss" scoped>
+.hero-header {
+  font-size: 3rem;
+  font-family: $Open-Sans;
+}
+
+.hero-copy {
+  font-size: 1.5rem;
 }
 </style>>
