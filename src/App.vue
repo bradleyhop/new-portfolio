@@ -68,6 +68,8 @@ export default {
 
     <v-app-bar
       app
+      dense
+      elevate-on-scroll
       color="primary"
       >
       <v-spacer></v-spacer>
@@ -76,7 +78,9 @@ export default {
       </v-app-bar-nav-icon>
     </v-app-bar>
 
-    <router-view />
+    <v-main>
+      <router-view />
+    </v-main>
 
     <v-footer
       color="primary"

@@ -16,10 +16,11 @@ export default {
 <template>
   <v-container
       class="fill-height"
-      fluid>
+      fluid
+      >
     <v-row>
       <v-col
-          class="justify-center col-lg-8 offset-lg-2 col-sm-12"
+          class="col-lg-8 offset-lg-2 col-sm-12"
           >
           <h2
               >
