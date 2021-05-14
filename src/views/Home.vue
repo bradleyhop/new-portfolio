@@ -23,13 +23,15 @@ export default {
                 <p
                     class="hero-header"
                     :style="$vuetify.breakpoint.xs ?
-                             'font-size: 2rem' : 'font-size: 3rem'"
+                             'font-size: 1.5rem' : 'font-size: 2rem'"
                     >
                     Hello, my name is
+                    <br />
                     <span
                         class="my-name"
                         :style="$vuetify.breakpoint.xs ?
-                                 'font-size: 2.5rem' : 'font-size: 3.5rem'"
+                                  'font-size: 2rem;'
+                                  : 'font-size: 3rem; margin-left: 10rem;'"
                         >
                         BRADLEY SMITH
                     </span>
@@ -39,7 +41,7 @@ export default {
                     :style="$vuetify.breakpoint.xs ?
                              'font-size: 1em' : 'font-size: 1.5em'"
                     >
-                    I am a web developer. Not a designer.
+                    I am a web developer based in Maine. I build great websites.
                 </p>
 
                 <router-link
@@ -48,8 +50,7 @@ export default {
                     >
                     <v-btn
                         color="secondary"
-                        elevation="4"
-                        large
+                        elevation="1"
                         >
                         Portfolio
                     </v-btn>
@@ -67,8 +68,8 @@ export default {
                       class="rounded-circle elevation-6"
                       src="@/assets/me.jpg"
                       alt="portrait of me looking confident"
-                      height="16em"
-                      width="16em"
+                      height="14em"
+                      width="14em"
                       cover
                       >
                   </v-img>
@@ -83,9 +84,14 @@ export default {
 .hero-header {
   font-family: $Open-Sans;
   font-weight: 300;
+  line-height: 1.25;
+}
+
+.hero-copy {
+  font-family: $Open-Sans;
 }
 
 .my-name {
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
 </style>
