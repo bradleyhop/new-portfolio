@@ -4,6 +4,7 @@ $Open-Sans: 'Open Sans', sans-serif !important;
 $Source-Sans-Pro: "Source Sans Pro", helvetica, sans-serif !important;
 $Poppins: 'Poppins', helvetica, sans-serif !important;
 
+// override vuetify default font
 .v-application {
   [class*='text-'] {
     font-family: $Poppins;
@@ -14,4 +15,10 @@ $Poppins: 'Poppins', helvetica, sans-serif !important;
 
 a {
   text-decoration: none;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 1.75rem;
+  letter-spacing: 1px;;
 }
