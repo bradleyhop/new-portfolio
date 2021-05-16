@@ -13,16 +13,8 @@ export default {
 
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      right
-      temporary
-      >
-      <v-list
-        class="view-list"
-        >
-
+    <v-navigation-drawer v-model="drawer" app right temporary>
+      <v-list class="view-list">
         <router-link :to="{ name: 'Home' }">
           <v-list-item link>
             <v-list-item-action>
@@ -58,20 +50,16 @@ export default {
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>Contact</v-list-item-title>
+              <v-list-item-title>
+                Contact
+              </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </router-link>
-
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar
-      app
-      dense
-      elevate-on-scroll
-      color="primary"
-      >
+    <v-app-bar app dense elevate-on-scroll color="primary">
       <v-spacer></v-spacer>
 
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="white">
@@ -82,14 +70,11 @@ export default {
       <router-view />
     </v-main>
 
-    <v-footer
-      color="primary"
-      >
+    <v-footer color="primary">
       <v-spacer></v-spacer>
 
       <span class="white--text">bradley smith &copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
-
   </v-app>
 </template>
 
