@@ -1,14 +1,10 @@
 <script>
 import ExpansionPanel from '@/components/ExpansionPanel.vue';
-import projects from '@/assets/projects.js';
 
 export default {
   name: 'Portfolio',
   components: {
     ExpansionPanel,
-  },
-  created() {
-    console.log(projects);
   },
 };
 </script>
