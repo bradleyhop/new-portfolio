@@ -1,24 +1,32 @@
 // global scss file that mainly overrides vuetify defaults
 
-$Open-Sans: 'Open Sans', sans-serif !important;
 $Source-Sans-Pro: "Source Sans Pro", helvetica, sans-serif !important;
 $Poppins: 'Poppins', helvetica, sans-serif !important;
 
-// override vuetify default font
+// override vuetify default font and size
 .v-application {
   [class*='text-'] {
     font-family: $Poppins;
+
+    @media only screen and  (max-width: 800px) {
+      font-size: 13px;
+    }
   }
 
   font-family: $Poppins;
+
+  @media only screen and  (max-width: 800px) {
+    font-size: 13px;
+  }
 }
 
 a {
   text-decoration: none;
 }
 
+// title for each page view
 .page-title {
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 1.75em;
   letter-spacing: 1px;;
 }
