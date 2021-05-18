@@ -5,7 +5,7 @@
 const ouvre = [
   {
     title: "Data Visualization with D3",
-    copy: "Lorum impsum",
+    copy: "This courses teaches data visualization utilizing the D3.js library to draw various presentations of data while working with JSON and APIs to fetch the data. I completed the projects using the Vue CLI to develop and build the projects in Vue.js. I took heavy inspiration from Material Design to guide my design choices.",
     projects: [
       {
         title: "Data Visualization Certification",

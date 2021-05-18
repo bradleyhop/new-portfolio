@@ -55,7 +55,7 @@ export default {
                           rel="noopener noreferrer"
                           title="live demo"
                         >
-                          <v-icon size="7rem" class="icon-link">
+                          <v-icon size="7em" class="icon-link">
                             mdi-link
                           </v-icon>
                         </a>
@@ -67,7 +67,7 @@ export default {
                           rel="noopener noreferrer"
                           title="source code"
                         >
-                          <v-icon size="5rem" class="icon-link">
+                          <v-icon size="5em" class="icon-link icon-github">
                             mdi-github
                           </v-icon>
                         </a>
@@ -95,7 +95,7 @@ export default {
   margin: 1rem;
 
   &:hover {
-  color: black;
+    color: black;
+  }
 }
-}
-</style>>
+</style>

@@ -15,15 +15,28 @@ export default {
   <v-app id="inspire">
     <v-navigation-drawer v-model="drawer" app right temporary>
       <v-list class="view-list">
+
         <router-link :to="{ name: 'Home' }">
           <v-list-item link>
             <v-list-item-action>
               <v-icon color="secondary">mdi-home</v-icon>
             </v-list-item-action>
-
             <v-list-item-content>
               <v-list-item-title>
                 Home
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </router-link>
+
+        <router-link :to="{ name: 'About' }">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon color="secondary">mdi-cards-heart</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>
+                About Me
               </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
@@ -34,7 +47,6 @@ export default {
             <v-list-item-action>
               <v-icon color="secondary">mdi-code-tags</v-icon>
             </v-list-item-action>
-
             <v-list-item-content>
               <v-list-item-title>
                 Portfolio
@@ -48,7 +60,6 @@ export default {
             <v-list-item-action>
               <v-icon color="secondary">mdi-email</v-icon>
             </v-list-item-action>
-
             <v-list-item-content>
               <v-list-item-title>
                 Contact
@@ -56,6 +67,7 @@ export default {
             </v-list-item-content>
           </v-list-item>
         </router-link>
+
       </v-list>
     </v-navigation-drawer>
 
@@ -81,7 +93,7 @@ export default {
 <style lang="scss">
 // extends veutify class; shows background image on every page view
 .v-application--wrap {
-  background: url('assets/dots.png') repeat;
+  background: url("assets/dots.png") repeat;
   background-color: #fff;
 }
 
