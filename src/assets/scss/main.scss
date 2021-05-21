@@ -26,7 +26,12 @@ a {
 
 // title for each page view
 .page-title {
-  text-align: center;
   font-size: 1.75em;
-  letter-spacing: 1px;;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+// flip material icon for fire to better resemble freeCodeCamp's icon
+.fcc {
+  transform: scale(-1, 1);
 }
