@@ -21,7 +21,7 @@ export default {
       <v-col class="col-lg-8 offset-lg-2 col-sm-12">
         <a href="https://freecodecamp.org" target="_blank" rel="norefferer noopener">
           <div class="heading">
-            freeCodeCamp &#40;<v-icon size="1.65rem" class="heading-icon" color="#00641f">
+            freeCodeCamp &#40;<v-icon size="1.65rem" class="fcc" color="#00641f">
               mdi-fire
             </v-icon>&#41;
           </div>
@@ -45,8 +45,5 @@ export default {
 }
 .heading-copy {
   font-family: $Source-Sans-Pro;
-}
-.heading-icon {
-  transform: scale(-1, 1);
 }
 </style>
