@@ -78,6 +78,7 @@ export default {
       </v-app-bar-nav-icon>
     </v-app-bar>
 
+    <!-- page contents plug in here -->
     <v-main>
       <router-view />
     </v-main>
