@@ -31,7 +31,8 @@ export default {
           </div>
 
           <div class="container-contact">
-            <p class="link-copy">Github
+            <p class="link-copy">
+              Github
             <a
               href="https://github.com/bradleyhop"
               target="_blank"
@@ -45,7 +46,8 @@ export default {
           </div>
 
           <div class="container-contact">
-            <p class="link-copy">LinkedIn
+            <p class="link-copy">
+              LinkedIn
             <a
               href="https://www.linkedin.com/in/bradley-smith-328235112/"
               class="link-contact"
@@ -59,7 +61,8 @@ export default {
           </div>
 
           <div class="container-contact">
-            <p class="link-copy">freeCodeCamp.org Profile
+            <p class="link-copy">
+              freeCodeCamp.org Profile
             <a
               href="https://www.freecodecamp.org/bradleyhop"
               class="link-contact"
@@ -73,7 +76,8 @@ export default {
           </div>
 
           <div class="container-contact">
-            <p class="link-copy">Wakatime
+            <p class="link-copy">
+              Wakatime
             <a
               href="https://wakatime.com/@bradleyhop"
               class="link-contact"

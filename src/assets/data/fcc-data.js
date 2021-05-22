@@ -2,7 +2,7 @@
  * projects variable which holds data on each freeCodeCamp module and project that I have completed
  */
 
-const ouvre = [
+const fCC = [
   {
     title: "Data Visualization with D3",
     copy: "This courses teaches data visualization utilizing the D3.js library to draw various presentations of data while working with JSON and APIs to fetch the data. I completed the projects using the Vue CLI to develop and build the projects in Vue.js. I took heavy inspiration from Material Design to guide my design choices.",
@@ -198,39 +198,6 @@ const ouvre = [
       },
     ],
   },
-  {
-    title: "Extracirricular",
-    copy: "In addition to freeCodeCamp, I use other resources to increase my knowledge and practice my skills. Here are various algorithm exercises, classes, and projects not part of the freeCodeCamp curriculum.",
-    projects: [
-      {
-        title: "Post-Rock Band Name Generator" ,
-        link: "https://bradleyhop.github.io/postRockBandName/",
-        img: {
-          src: "postrockBandname.jpg",
-          alt: "screenshot of post rock band name quiz",
-        },
-        github: "https://github.com/bradleyhop/postrock-bandname/",
-      },
-      {
-        title: "Terminal Quote Generator",
-        link: "https://bradleyhop.github.io/randomQuotes/extraCreditRQ/random.html",
-        img: {
-          src: "terminalQuote.jpg",
-          alt: "screenshot of terminal style random quote generator",
-        },
-        github: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/randomQuotes/extraCreditRQ/",
-      },
-      {
-        title: "Wikipedia Article Search and Preview" ,
-        link: "https://bradleyhop.github.io/wikiSearchApp/",
-        img: {
-          src: "wikiSearch.jpg",
-          alt: "screenshot of wikipedia search and preview article application",
-        },
-        github: "https://github.com/bradleyhop/wikiSearchApp/",
-      },
-    ],
-  }
 ];
 
-export default ouvre;
+export default fCC;

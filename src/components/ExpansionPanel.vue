@@ -1,20 +1,24 @@
 <script>
-import ouvre from '@/assets/projects.js';
-
 export default {
   name: 'ExpansionPanel',
 
   data:() => ({
-      projectListings: ouvre, // project data to iterate
       overlay: false, // state of hover for image overlay for project links
-    }),
+  }),
+
+  props: {
+    projectData: {
+      type: Array,
+      default: () => [],
+    },
+  },
 
 };
 </script>
 
 <template>
   <v-expansion-panels>
-    <v-expansion-panel v-for="(item, i) in projectListings" :key="i">
+    <v-expansion-panel v-for="(item, i) in projectData" :key="i">
       <v-expansion-panel-header>
         {{ item.title }}
         <template v-slot:actions>
@@ -55,8 +59,8 @@ export default {
                           rel="noopener noreferrer"
                           title="live demo"
                         >
-                          <v-icon size="7em" class="icon-link">
-                            mdi-link
+                          <v-icon size="5em" class="icon-link">
+                            mdi-open-in-new
                           </v-icon>
                         </a>
 

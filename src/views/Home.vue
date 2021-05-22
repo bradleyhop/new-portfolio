@@ -7,7 +7,7 @@ export default {
 <template>
   <v-container fill-height fluid>
     <v-row align="center">
-      <v-col offset-lg="2" lg="8" sm="12">
+      <v-col offset-lg="4" lg="4" sm="12">
         <div class="hero-header header-text">
           Hello, my name is
           <br />
@@ -25,17 +25,6 @@ export default {
           </v-btn>
         </router-link>
 
-        <div align="center" class="me-img">
-          <v-img
-            class="rounded-circle elevation-6"
-            src="@/assets/me.jpg"
-            alt="portrait of me looking confident"
-            height="14em"
-            width="14em"
-            cover
-          >
-          </v-img>
-        </div>
       </v-col>
     </v-row>
   </v-container>

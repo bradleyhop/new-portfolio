@@ -13,6 +13,19 @@ export default {
 
     <v-row>
       <v-col offset-md="3" md="6">
+
+        <div align="center" class="me-img">
+          <v-img
+            class="rounded-circle elevation-6"
+            src="@/assets/me.jpg"
+            alt="portrait of me looking confident"
+            height="14em"
+            width="14em"
+            cover
+          >
+          </v-img>
+        </div>
+
         <p>
           I am recent transplant from Chicago to the Belgrade Lakes area in Maine. I am passionate
           about learning and am always looking for new challenges. I love discovering new skills and
@@ -75,4 +88,8 @@ export default {
 .list-group {
   margin-bottom: 1em;
 }
-</style>>
+
+.me-img {
+  margin-bottom: 2em;
+}
+</style>
