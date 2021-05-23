@@ -1,3 +1,4 @@
+import '@fortawesome/fontawesome-free/css/all.css' // Ensure you are using css-loader
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib/framework';
 
@@ -19,4 +20,7 @@ const vuetify = new Vuetify({
 Vue.use(Vuetify, vuetify);
 
 export default new Vuetify({
+  icons: {
+    iconfont: 'fa',
+  },
 });

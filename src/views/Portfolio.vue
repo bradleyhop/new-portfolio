@@ -26,10 +26,9 @@ export default {
       <v-col class="offset-lg-3 col-lg-6 col-sm-12">
         <a href="https://freecodecamp.org" target="_blank" rel="norefferer noopener">
           <div class="heading fcc-color">
-            freeCodeCamp &#40;<v-icon size="1.65rem" class="fcc" color="#00641f"> mdi-fire </v-icon
-            >&#41;
+            freeCodeCamp <i class="fab fa-free-code-camp fcc-icon"></i>
           </div>
-        </a>
+                  </a>
         <p class="heading-copy">
           I use freeCodeCamp as my primary source of learning and project building. Courses are
           designed to be taken in order starting with basic html and css, to learning frontend and
@@ -71,6 +70,10 @@ In addition to freeCodeCamp, I use other resources to increase my knowledge and 
 
 .fcc-color {
   color: #00641f;
+}
+
+.fcc-icon {
+  font-size: 1.25em;
 }
 
 .heading-copy {
