@@ -1,9 +1,18 @@
 // global scss file that mainly overrides vuetify defaults
 
+// color theme available as scss variables
+$primary: #2196F3;
+$primaryLight: #5ddef4;
+$primaryDark: #007c91;
+$secondary: #ffa000;
+$secondaryLight: #ffc947;
+$secondaryDark: #c66900;
+
+// override default vuetify fonts
 $Source-Sans-Pro: "Source Sans Pro", helvetica, sans-serif !important;
 $Poppins: 'Poppins', helvetica, sans-serif !important;
 
-// override vuetify default font and size
+// override vuetify default font use and size
 .v-application {
   [class*='text-'] {
     font-family: $Poppins;
@@ -29,9 +38,4 @@ a {
   font-size: 1.75em;
   letter-spacing: 1px;
   text-align: center;
-}
-
-// flip material icon for fire to better resemble freeCodeCamp's icon
-.fcc {
-  transform: scale(-1, 1);
 }

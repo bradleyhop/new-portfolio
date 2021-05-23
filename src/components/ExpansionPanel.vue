@@ -41,6 +41,9 @@ export default {
               </template>
             </v-expansion-panel-header>
             <v-expansion-panel-content>
+              <div class="cert-copy" v-if="projectItem.copy">
+                {{ projectItem.copy }}
+              </div>
               <v-hover>
                 <template v-slot:default="{ hover }">
                   <v-img

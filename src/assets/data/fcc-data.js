@@ -78,6 +78,7 @@ const fCC = [
       },
       {
         title: "Pomodoro Timer",
+        copy: "Timer to help focus and productivity. Zen enso draws as timer counts down. Project is now titled '25 + 5 timer'.",
         link: "https://bradleyhop.github.io/pomodoroTimer/",
         img: {
           src: "pomodoroTimer.jpg",
@@ -87,6 +88,7 @@ const fCC = [
       },
       {
         title: "Javascript Calculator",
+        copy: "Mimics funtions of the Texas Instruments SR-10 calculator.",
         link: "https://bradleyhop.github.io/js-calculator/",
         img: {
           src: "jsCalculator.jpg",
@@ -96,6 +98,7 @@ const fCC = [
       },
       {
         title: "Drum Machine",
+        copy: "Plays sounds on keypress or button press.",
         link: "https://bradleyhop.github.io/drumMachine/",
         img: {
           src: "drumMachine.jpg",
@@ -105,6 +108,7 @@ const fCC = [
       },
       {
         title: "Markdown Previewer",
+        copy: "Provides realtime preview of markdown text to html. Does not pass unit tests because it uses Vue, which is unsupoorted,  but does pass the user stories; see README in github for more info.",
         link: "https://bradleyhop.github.io/markdownPreviewer/markdownPre.html",
         img: {
           src: "markdownPreviewer.jpg",
@@ -114,6 +118,7 @@ const fCC = [
       },
       {
         title: "Random Quote Machine",
+        copy: "Fetches and displays a random programming themed quote on button press.",
         link: "https://bradleyhop.github.io/randomQuotes/randomQuote.html",
         img: {
           src: "randomQuoteGenerator.jpg",

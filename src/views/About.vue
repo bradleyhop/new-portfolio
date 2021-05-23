@@ -57,7 +57,7 @@ export default {
               SASS
             </li>
             <li>
-              IDE is Vim within a Tmux session
+              IDE is Vim (with plugins) within Tmux
             </li>
           </ul>
         </div>
