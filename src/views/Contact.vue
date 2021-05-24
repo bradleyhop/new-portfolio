@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <v-container class="align-start" fill-height fluid>
+  <v-container class="align-start contact-container" fill-height fluid>
     <v-row>
       <v-col class="page-title"> CONTACT </v-col>
     </v-row>
@@ -21,7 +21,7 @@ export default {
     <v-row class="justify-center">
       <v-col lg="3" md="5" sm="5" xs="12" class="col-contact">
         <div class="group-contact">
-          <div class="container-contact">
+          <div class="link-container">
             <p class="link-copy">
               Email me
               <a
@@ -35,7 +35,7 @@ export default {
             </p>
           </div>
 
-          <div class="container-contact">
+          <div class="link-container">
             <p class="link-copy">
               Github
               <a
@@ -52,7 +52,7 @@ export default {
             </p>
           </div>
 
-          <div class="container-contact">
+          <div class="link-container">
             <p class="link-copy">
               LinkedIn
               <a
@@ -67,9 +67,9 @@ export default {
             </p>
           </div>
 
-          <div class="container-contact">
+          <div class="link-container">
             <p class="link-copy">
-              freeCodeCamp.org Profile
+              freeCodeCamp.org
               <a
                 href="https://www.freecodecamp.org/bradleyhop"
                 class="link-contact"
@@ -82,7 +82,7 @@ export default {
             </p>
           </div>
 
-          <div class="container-contact">
+          <div class="link-container">
             <p class="link-copy">
               Wakatime
               <a
@@ -106,7 +106,11 @@ export default {
 </template>
 
 <style lang="scss">
-.container-contact {
+.contact-container {
+  background-color: $not-purple;
+}
+
+.link-container {
   margin: 1em;
 }
 
@@ -117,17 +121,18 @@ export default {
 
 .link-copy {
   float: left;
+  font-size: 1.2em;
   line-height: 3em;
   width: 100%;
 }
 
 .icon-contact {
-  font-size: 3em !important;
+  font-size: 2.5em !important;
   float: right;
-  color: $secondary !important;// since fontawesome icons can't use vuetify's color property
+  color: #fff !important;// since fontawesome icons can't use vuetify's color property
 
   &:hover {
-    color: $secondaryLight !important;
+    color: #000 !important;
   }
 }
 </style>

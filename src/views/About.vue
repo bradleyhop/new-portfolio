@@ -4,7 +4,7 @@ export default {
 };
 </script>
 <template>
-  <v-container class="align-start" fill-height fluid>
+  <v-container class="align-start about-container" fill-height fluid>
     <v-row>
       <v-col class="page-title">
         ABOUT ME
@@ -27,13 +27,14 @@ export default {
         </div>
 
         <p>
-          I am recent transplant from Chicago to the Belgrade Lakes area in Maine. I am passionate
-          about learning and am always looking for new challenges. I love discovering new skills and
-          technologies to produce easy to use and maintain websites and applications.
+          I am genuinely curious and am always looking for new challenges. I love discovering
+          new skills and technologies to produce easy to use and maintain websites and applications.
+          As a recent transplant from Chicago to the Belgrade Lakes area in Maine, I am looking
+          for a remote position.
         </p>
 
         <p>
-          Away from the screen, I enjoy dancing and teaching the Lindy Hop and other vernacular jazz
+          Away from the screen, I enjoy dancing and teaching the Lindy Hop and other vintage jazz
           dances, restoring and modding vintage video game systems, hiking and kayaking, and
           listening to records.
         </p>
@@ -85,6 +86,10 @@ export default {
 </template>
 
 <style lang="scss">
+.about-container {
+  background-color: $not-green;
+}
+
 .list-group {
   margin-bottom: 1em;
 }
