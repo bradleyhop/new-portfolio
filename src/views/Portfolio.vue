@@ -28,14 +28,13 @@ export default {
           <div class="heading fcc-color">
             freeCodeCamp <i class="fab fa-free-code-camp fcc-icon"></i>
           </div>
-                  </a>
+        </a>
         <p class="heading-copy">
           I use freeCodeCamp as my primary source of learning and project building. Courses are
           designed to be taken in order starting with basic html and css, to learning frontend and
           backend frameworks with javascript.
         </p>
         <p class="heading-copy">
-
           Each project has a series of user stories checked by a unit testing tool provided by
           freeCodeCamp. The green hamburger-icon in the top left drops down to show a list of
           projects. Be sure to select the correct project from the drop-down menu, select "Run
@@ -43,21 +42,16 @@ export default {
           supported by these unit tests, but I was able to get nearly all projects to pass.
         </p>
 
-        <ExpansionPanel
-          :projectData="freecodecampData"
-          class="expan-panel"
-        />
+        <ExpansionPanel :projectData="freecodecampData" class="expan-panel" />
 
         <div class="heading">Extracurricular</div>
         <p class="heading-copy">
-In addition to freeCodeCamp, I use other resources to increase my knowledge and practice my skills. Here are various algorithm exercises, classes, and projects not part of the freeCodeCamp curriculum.
+          In addition to freeCodeCamp, I use other resources to increase my knowledge and practice
+          my skills. Here are various algorithm exercises, classes, and projects not part of the
+          freeCodeCamp curriculum.
         </p>
 
-        <ExpansionPanel
-          :projectData="extraData"
-          class="expan-panel"
-        />
-
+        <ExpansionPanel :projectData="extraData" class="expan-panel" />
       </v-col>
     </v-row>
   </v-container>

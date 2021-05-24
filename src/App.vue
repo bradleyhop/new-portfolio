@@ -13,9 +13,8 @@ export default {
 
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer v-model="drawer" app right temporary>
+    <v-navigation-drawer v-model="drawer" class="nav-drawer" app right temporary>
       <v-list class="view-list">
-
         <router-link :to="{ name: 'Home' }">
           <v-list-item link>
             <v-list-item-action>
@@ -67,14 +66,13 @@ export default {
             </v-list-item-content>
           </v-list-item>
         </router-link>
-
       </v-list>
     </v-navigation-drawer>
 
     <v-app-bar app dense elevate-on-scroll color="primary">
       <v-spacer></v-spacer>
 
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="white">
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="white" aria-label="menu">
       </v-app-bar-nav-icon>
     </v-app-bar>
 
@@ -86,15 +84,16 @@ export default {
     <v-footer color="primary">
       <v-spacer></v-spacer>
 
-      <span class="white--text">bradley smith &copy; {{ new Date().getFullYear() }}</span>
+      <a href="https://github.com/bradleyhop" rel="noreferrer noopener" target="_blank">
+        <span class="white--text">bradley smith &copy; {{ new Date().getFullYear() }}</span>
+      </a>
     </v-footer>
   </v-app>
 </template>
 
 <style lang="scss">
-// extends veutify class; shows background image on every page view
-.v-application--wrap {
-  background: url("assets/dots.png") repeat;
+.nav-drawer {
+  // background: url("assets/dots.png") repeat;
   background-color: #fff;
 }
 
