@@ -35,7 +35,7 @@ const extra = [
           src: "wikiSearch.jpg",
           alt: "screenshot of wikipedia search and preview article application",
         },
-        github: "https://github.com/bradleyhop/wikiSearchApp/",
+        github: "https://github.com/bradleyhop/bradleyhop.github.io/tree/master/wikiSearchApp",
       },
     ],
   }
