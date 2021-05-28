@@ -26,20 +26,20 @@ export default {
           </v-img>
         </div>
 
-        <p>
+        <p class="me-copy">
           I am genuinely curious and am always looking for new challenges. I love discovering
           new skills and technologies to produce easy to use and maintain websites and applications.
           As a recent transplant from Chicago to the Belgrade Lakes area in Maine, I am looking
           for a remote position.
         </p>
 
-        <p>
+        <p class="me-copy">
           Away from the screen, I enjoy dancing and teaching the Lindy Hop and other vintage jazz
           dances, restoring and modding vintage video game systems, hiking and kayaking, and
           listening to records.
         </p>
 
-        <div class="list-group">
+        <div class="list-group me-copy">
           <div class="list-header">Current technology stack:</div>
           <ul>
             <li>
@@ -64,7 +64,7 @@ export default {
         </div>
         <!-- list-group -->
 
-        <div class="list-group">
+        <div class="list-group me-copy">
           <div class="list-header">I've built projects using:</div>
           <ul>
             <li>
@@ -88,6 +88,10 @@ export default {
 <style lang="scss">
 .about-container {
   background-color: $not-green;
+}
+
+.me-copy {
+  font-size: 1.1em;
 }
 
 .list-group {
