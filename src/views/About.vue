@@ -12,20 +12,21 @@ export default {
     </v-row>
 
     <v-row>
-      <v-col offset-md="3" md="6">
+      <!-- cols implies xs breakpoint in vuetify; go figure -->
+      <v-col align="center" cols="12" align-self="center" md="5" offset-md="1">
 
-        <div align="center" class="me-img">
           <v-img
-            class="rounded-circle elevation-6"
+            class="rounded-circle elevation-8"
             src="@/assets/me.jpg"
             alt="portrait of me looking confident"
-            height="14em"
-            width="14em"
+            :height="$vuetify.breakpoint.xs ? '12em' : '16em'"
+            :width="$vuetify.breakpoint.xs ? '12em' : '16em'"
             cover
           >
           </v-img>
-        </div>
+      </v-col>
 
+      <v-col cols="12" md="5">
         <p class="me-copy">
           I am genuinely curious and am always looking for new challenges. I love discovering
           new skills and technologies to produce easy to use and maintain websites and applications.
