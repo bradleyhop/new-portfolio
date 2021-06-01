@@ -1,5 +1,5 @@
 /*
- * projects variable which holds data on each extracirricular I have completed
+ * projects variable which holds data on each extracurricular I have completed
  */
 
 const extra = [
@@ -7,6 +7,16 @@ const extra = [
     title: "Original Projects",
     copy: "",
     projects: [
+      {
+        title: "Art Institure of Chicago API Photo Matching App" ,
+        copy: "Returns a work of art from a curated list with the same dominant color (in its top three dominant colors) given an uploaded image. A development tool for a data science grad student.",
+        link: "https://bradleyhop.github.io/scratch-aic/",
+        img: {
+          src: "aic.png",
+          alt: "screenshot of art institute of Chicago API photo matching app",
+        },
+        github: "https://github.com/mrutherfoord/AIC-Photo-Match/tree/master/frontEnd",
+      },
       {
         title: "Post-Rock Band Name Generator" ,
         copy: "Based on a meme, create a post-rock band name based on a set of criteria.",
