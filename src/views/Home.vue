@@ -7,13 +7,13 @@ export default {
 <template>
   <v-container fill-height fluid class="home-container">
     <v-row align="center">
-      <v-col offset-lg="4" lg="4" sm="12">
+      <v-col offset-lg="3" lg="6" sm="12">
         <div class="hero-header header-text">
           Hello, my name is
           <br />
         </div>
         <div class="my-name header-text">
-          BRADLEY SMITH
+          Bradley Smith
         </div>
         <div class="hero-copy">
           I am a web developer based in Maine. I build great websites.
@@ -41,7 +41,6 @@ export default {
 
 .header-text {
   font-family: $Poppins;
-  font-weight: 200;
   line-height: 1.25;
 }
 
@@ -51,8 +50,8 @@ export default {
 
 .my-name {
   letter-spacing: 4px;
-  font-size: 3.25em;
-  font-weight: 400;
+  font-size: 5.5em;
+  font-family: Raleway, sans-serif !important;
   margin: 0 0 0.25em 2em;
 
   @media only screen and (max-width: 800px) {
@@ -62,7 +61,7 @@ export default {
 
 .hero-copy {
   font-family: $Source-Sans-Pro;
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin-bottom: 0.5em;
 }
 
