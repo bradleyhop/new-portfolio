@@ -3,6 +3,7 @@ export default {
   name: 'About',
 };
 </script>
+
 <template>
   <v-container class="align-start about-container" fill-height fluid>
     <v-row>
@@ -12,26 +13,25 @@ export default {
     </v-row>
 
     <v-row>
-      <!-- cols implies xs breakpoint in vuetify; go figure -->
+      <!-- 'cols' implies xs breakpoint in vuetify -->
       <v-col align="center" cols="12" align-self="center" md="5" offset-md="1">
-
-          <v-img
-            class="rounded-circle elevation-8"
-            src="@/assets/me.jpg"
-            alt="portrait of me looking confident"
-            :height="$vuetify.breakpoint.xs ? '12em' : '16em'"
-            :width="$vuetify.breakpoint.xs ? '12em' : '16em'"
-            cover
-          >
-          </v-img>
+        <v-img
+          class="rounded-circle elevation-8"
+          src="@/assets/me.jpg"
+          alt="portrait of me looking confident"
+          :height="$vuetify.breakpoint.xs ? '12em' : '16em'"
+          :width="$vuetify.breakpoint.xs ? '12em' : '16em'"
+          cover
+        >
+        </v-img>
       </v-col>
 
       <v-col cols="12" md="5">
         <p class="me-copy">
-          I am genuinely curious and am always looking for new challenges. I love discovering
-          new skills and technologies to produce easy to use and maintain websites and applications.
-          As a recent transplant from Chicago to the Belgrade Lakes area in Maine, I am looking
-          for a remote position.
+          I am genuinely curious and am always looking for new challenges. I love discovering new
+          skills and technologies to produce easy both to use and maintain websites and
+          applications. As a recent transplant from Chicago to the Belgrade Lakes area in Maine, I
+          am looking for a remote position.
         </p>
 
         <p class="me-copy">
@@ -76,7 +76,7 @@ export default {
             </li>
             <li>
               Explicitly installed javascript libraries including D3.js, ProgressBar.js, math.js,
-              and some AWS services
+              and S3 and SQS Amazon Web Services
             </li>
           </ul>
         </div>
