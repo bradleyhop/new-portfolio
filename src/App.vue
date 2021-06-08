@@ -6,7 +6,7 @@
 <script>
 export default {
   data: () => ({
-    drawer: null,
+    drawer: null, // menu drawer is closed on page load
   }),
 };
 </script>
