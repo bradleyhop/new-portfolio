@@ -9,6 +9,9 @@ npm run build
 # navigate into the build output directory
 cd dist
 
+# add CNAME file since we're using a static site generator
+echo "www.bradleysmith.tech" > CNAME
+
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 
