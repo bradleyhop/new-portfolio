@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+# for deploying to github pages; must use hash mode for router, or 404 hack
+
 # abort on errors
 set -e
 
