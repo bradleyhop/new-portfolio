@@ -31,9 +31,9 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  // default mode is 'hash', but somehow 'history' mode was configured;
   // cannot configure gitHub pages to use history mode: server configuration required
-  mode: 'hash',
+  //  changed back to history since I'm using netlify now
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 });
