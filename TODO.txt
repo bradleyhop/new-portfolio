@@ -1,5 +1,1 @@
-test asset links
-change default theme colors
-write intro blurb
-write new 'about me'
 choose three top projects to showcase

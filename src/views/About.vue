@@ -41,7 +41,7 @@ export default {
         </p>
 
         <div class="list-group me-copy">
-          <div class="list-header">Current technology stack:</div>
+          <div class="list-header">Current skill stack:</div>
           <ul>
             <li>
               HTML5
@@ -75,7 +75,7 @@ export default {
               Bootstrap
             </li>
             <li>
-              Explicitly installed javascript libraries including D3.js, ProgressBar.js, math.js,
+              Various javascript libraries including D3.js, ProgressBar.js, math.js,
               and S3 and SQS Amazon Web Services
             </li>
           </ul>
