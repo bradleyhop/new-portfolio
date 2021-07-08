@@ -23,7 +23,7 @@ export default {
     </v-row>
 
     <v-row>
-      <v-col class="offset-lg-3 col-lg-6 col-sm-12">
+      <v-col cols="12" md="6" offset-md="3">
         <a href="https://freecodecamp.org" target="_blank" rel="norefferer noopener">
           <div class="heading fcc-color">
             freeCodeCamp <i class="fab fa-free-code-camp fcc-icon"></i>
