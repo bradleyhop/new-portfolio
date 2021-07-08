@@ -30,6 +30,7 @@ $Poppins: 'Poppins', helvetica, sans-serif !important;
 // override vuetify default font use and size
 .v-application {
   [class*='text-'] {
+    font-display: swap;
     font-family: $Poppins;
 
     @media only screen and  (max-width: 800px) {
@@ -37,6 +38,7 @@ $Poppins: 'Poppins', helvetica, sans-serif !important;
     }
   }
 
+  font-display: swap;
   font-family: $Poppins;
 
   @media only screen and  (max-width: 800px) {

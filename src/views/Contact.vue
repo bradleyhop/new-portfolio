@@ -19,7 +19,7 @@ export default {
     </v-row>
 
     <v-row class="justify-center">
-      <v-col cols="12" md="4" class="col-contact">
+      <v-col cols="12" lg="4" sm="6" class="col-contact">
         <div class="group-contact">
           <div class="link-container">
             <a
@@ -30,7 +30,7 @@ export default {
             >
               <p class="link-copy">
                 Email me
-                <v-icon title="email me" class="icon-contact"> mdi-email </v-icon>
+                <i class="far fa-envelope icon-contact"></i>
               </p>
             </a>
           </div>
@@ -40,12 +40,13 @@ export default {
               href="https://github.com/bradleyhop"
               class="link-contact"
               target="_blank"
+              title="GitHub"
               rel="noopener noreferrer"
-              aria-label="Bradley's github profile"
+              aria-label="Bradley's GitHub profile"
             >
               <p class="link-copy">
-                Github
-                <v-icon title="github profile" class="icon-contact"> mdi-github </v-icon>
+                GitHub
+                <i class="fab fa-github icon-contact"></i>
               </p>
             </a>
           </div>
@@ -55,12 +56,13 @@ export default {
               href="https://www.linkedin.com/in/bradley-smith-328235112/"
               class="link-contact"
               target="_blank"
+              title="LinkedIn"
               rel="noopener noreferrer"
-              aria-label="Bradley's linked in profile"
+              aria-label="Bradley's LinkedIn profile"
             >
               <p class="link-copy">
                 LinkedIn
-                <i class="fab fa-linkedin-in icon-contact" title="linkedin"></i>
+                <i class="fab fa-linkedin-in icon-contact"></i>
               </p>
             </a>
           </div>
@@ -70,12 +72,13 @@ export default {
               href="https://www.freecodecamp.org/bradleyhop"
               class="link-contact"
               target="_blank"
+              title="freeCodeCamp"
               rel="noopener noreferrer"
               aria-label="Bradley's free code camp profile"
             >
               <p class="link-copy">
-                freeCodeCamp.org
-                <i class="fab fa-free-code-camp icon-contact" title="freeCodeCamp profile"></i>
+                freeCodeCamp
+                <i class="fab fa-free-code-camp icon-contact"></i>
               </p>
             </a>
           </div>
@@ -85,12 +88,13 @@ export default {
               href="https://wakatime.com/@bradleyhop"
               class="link-contact"
               target="_blank"
+              title="WakaTime"
               rel="noopener noreferrer"
               aria-label="Bradley's waka time profile"
             >
               <p class="link-copy">
-                Wakatime
-                <v-icon title="wakatime profile" class="icon-contact"> mdi-timer-outline </v-icon>
+                WakaTime
+                <i class="fas fa-stopwatch icon-contact"></i>
               </p>
             </a>
           </div>
@@ -107,15 +111,11 @@ export default {
 }
 
 .link-contact {
-  color: #fff !important;
+  color: #000 !important;
 
   &:hover {
-    color: #000 !important;
+    color: #fff !important;
   }
-}
-
-.v-icon {
-  all: none; // reset vuetify default theme colors
 }
 
 .copy-contact {
@@ -131,7 +131,8 @@ export default {
 }
 
 .icon-contact {
-  font-size: 2.5em !important;
+  font-size: 2em;
+  vertical-align: middle;
   float: right;
 }
 </style>
