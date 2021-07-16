@@ -46,6 +46,7 @@ $Poppins: 'Poppins', helvetica, sans-serif !important;
   }
 }
 
+// reset all default decorations
 a {
   text-decoration: none;
 }
@@ -55,4 +56,15 @@ a {
   font-size: 1.75em;
   letter-spacing: 1px;
   text-align: center;
+}
+
+// zoom on hover and color change for icon links
+.icon-link {
+  margin: 1rem;
+  transition: transform 0.2s;
+
+  &:hover {
+    color: black;
+    transform: scale(1.25);
+  }
 }

@@ -3,7 +3,6 @@ module.exports = {
     'vuetify'
   ],
   css: {
-
     loaderOptions: {
       scss: {
         additionalData: `

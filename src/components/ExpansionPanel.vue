@@ -50,7 +50,7 @@ export default {
                     v-if="projectItem.img.src"
                     :src="require(`@/assets/screenshots/${projectItem.img.src}?vuetify-preload`)"
                     :alt="projectItem.img.alt"
-                    :aspect-ratio="16 / 9"
+                    :aspect-ratio="16/9"
                     class="mx-auto"
                     width="30em"
                   >
@@ -74,7 +74,7 @@ export default {
                           rel="noopener noreferrer"
                           title="source code"
                         >
-                          <v-icon size="5em" class="icon-link icon-github">
+                          <v-icon size="5em" class="icon-link">
                             mdi-github
                           </v-icon>
                         </a>
@@ -96,13 +96,5 @@ export default {
 .cert-copy {
   font-family: $Source-Sans-Pro;
   margin-bottom: 1em;
-}
-
-.icon-link {
-  margin: 1rem;
-
-  &:hover {
-    color: black;
-  }
 }
 </style>
