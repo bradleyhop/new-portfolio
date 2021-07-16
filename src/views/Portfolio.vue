@@ -1,12 +1,14 @@
 <script>
 import ExpansionPanel from '@/components/ExpansionPanel.vue';
+import PortCard from '@/components/PortCard.vue';
 import fCC from '@/assets/data/fcc-data.js';
-import extra from '@/assets/data/extra-data.js'
+import extra from '@/assets/data/extra-data.js';
 
 export default {
   name: 'Portfolio',
   components: {
     ExpansionPanel,
+    PortCard,
   },
 
   data:() => ({
@@ -20,6 +22,25 @@ export default {
   <v-container fill-height class="align-start" fluid>
     <v-row>
       <v-col class="page-title"> PORTFOLIO </v-col>
+    </v-row>
+
+    <!-- top three projects to highlight -->
+    <v-row>
+
+      <v-col cols="4">
+        <!-- Choropleth Map project -->
+        <PortCard
+          :cardTitle="freecodecampData[0].projects[2].title"
+          :liveLink="freecodecampData[0].projects[2].link"
+          :gitLink="freecodecampData[0].projects[2].github"
+          :imgSrc="
+              require(`@/assets/screenshots/${freecodecampData[0].projects[2].img.src}?vuetify-preload`)
+            "
+          :imgAlt="freecodecampData[0].projects[2].img.alt"
+        />
+      </v-col>
+
+
     </v-row>
 
     <v-row>
