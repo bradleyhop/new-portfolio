@@ -25,23 +25,41 @@ export default {
     </v-row>
 
     <!-- top three projects to highlight -->
-    <v-row>
-
-      <v-col cols="4">
-        <!-- Choropleth Map project -->
-        <PortCard
-          :cardTitle="freecodecampData[0].projects[2].title"
-          :liveLink="freecodecampData[0].projects[2].link"
-          :gitLink="freecodecampData[0].projects[2].github"
-          :imgSrc="
-              require(`@/assets/screenshots/${freecodecampData[0].projects[2].img.src}?vuetify-preload`)
-            "
-          :imgAlt="freecodecampData[0].projects[2].img.alt"
+    <div class="d-flex flex-wrap justify-center justify-center">
+      <!-- Choropleth Map project -->
+      <PortCard
+      :cardTitle="freecodecampData[0].projects[2].title"
+        :liveLink="freecodecampData[0].projects[2].link"
+        :gitLink="freecodecampData[0].projects[2].github"
+        :imgSrc="
+        require(`@/assets/screenshots/${freecodecampData[0].projects[2].img.src}?vuetify-preload`)
+        "
+        :imgAlt="freecodecampData[0].projects[2].img.alt"
         />
-      </v-col>
 
+      <!-- AIC Color Match -->
+      <PortCard
+      :cardTitle="extraData[0].projects[0].title"
+        :liveLink="extraData[0].projects[0].link"
+        :gitLink="extraData[0].projects[0].github"
+        :imgSrc="
+        require(`@/assets/screenshots/${extraData[0].projects[0].img.src}?vuetify-preload`)
+        "
+        :imgAlt="extraData[0].projects[0].img.alt"
+        />
 
-    </v-row>
+      <!-- Pomodoro Timer -->
+      <PortCard
+      :cardTitle="freecodecampData[1].projects[1].title"
+        :liveLink="freecodecampData[1].projects[1].link"
+        :gitLink="freecodecampData[1].projects[1].github"
+        :imgSrc="
+        require(`@/assets/screenshots/${freecodecampData[1].projects[1].img.src}?vuetify-preload`)
+        "
+        :imgAlt="freecodecampData[1].projects[1].img.alt"
+        />
+
+    </div>
 
     <v-row>
       <v-col cols="12" md="6" offset-md="3">
