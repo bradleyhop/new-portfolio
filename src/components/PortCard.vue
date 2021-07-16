@@ -35,49 +35,53 @@ export default {
 </script>
 
 <template>
-  <v-card>
-    <v-row>
-      <v-col cols="6">
-        <v-card-title>{{ cardTitle }}</v-card-title>
-        <v-card-subtitle>
-          <a
-            :href=liveLink
-            target="_blank"
-            rel="noopener noreferrer"
-            title="live demo"
-          >
-            <v-icon size="2.5rem" class="icon-link card-link">
-              mdi-open-in-new
-            </v-icon>
-          </a>
+  <v-card class="port-card-container">
+    <v-img
+      class="card-img"
+      :src=imgSrc
+      :alt=imgAlt
+      :aspect-ratio="16/9"
+      >
+    </v-img>
+    <v-card-title>{{ cardTitle }}</v-card-title>
+    <v-card-subtitle>
+      <a
+        :href=liveLink
+        target="_blank"
+        rel="noopener noreferrer"
+        title="live demo"
+        >
+        <v-icon size="2.5rem" class="icon-link card-link">
+          mdi-open-in-new
+        </v-icon>
+      </a>
 
-          <a
-            :href=gitLink
-            target="_blank"
-            rel="noopener noreferrer"
-            title="source code"
-          >
-            <v-icon size="2.5rem" class="icon-link card-link">
-              mdi-github
-            </v-icon>
-          </a>
-        </v-card-subtitle>
-      </v-col>
-      <v-col cols="6">
-        <v-img
-          class="card-img"
-          :src=imgSrc
-          :alt=imgAlt
-          :aspect-ratio="16/9"
-          >
-        </v-img>
-      </v-col>
-    </v-row>
+      <a
+        :href=gitLink
+        target="_blank"
+        rel="noopener noreferrer"
+        title="source code"
+        >
+        <v-icon size="2.5rem" class="icon-link card-link">
+          mdi-github
+        </v-icon>
+      </a>
+    </v-card-subtitle>
   </v-card>
 </template>
 
 <style lang="scss" scoped>
+.port-card-container {
+  width: 20rem;
+  margin: 1rem;
+}
+
 .card-img {
-  width: 15rem;
+  max-width: 20rem;
+}
+
+.card-link {
+  margin: 0;
+  margin-right: 0.875rem;
 }
 </style>
