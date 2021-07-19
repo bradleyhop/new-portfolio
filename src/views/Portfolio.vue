@@ -126,6 +126,7 @@ export default {
 
 .heading-copy {
   font-family: $Source-Sans-Pro;
+  font-size: 1.1rem;
 }
 
 .expan-panel {

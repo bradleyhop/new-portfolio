@@ -95,6 +95,6 @@ export default {
 <style lang="scss" scoped>
 .cert-copy {
   font-family: $Source-Sans-Pro;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 </style>
