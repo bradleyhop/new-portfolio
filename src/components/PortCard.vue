@@ -1,12 +1,6 @@
 <script>
-import fCC from '@/assets/data/fcc-data.js';
-
 export default {
   name: 'PortCard',
-
-  data:() => ({
-    freecodecampData: fCC,
-  }),
 
   props: {
     cardTitle: {
@@ -72,8 +66,8 @@ export default {
 
 <style lang="scss" scoped>
 .port-card-container {
-  width: 20rem;
   margin: 1rem;
+  width: 20rem;
 }
 
 .card-img {

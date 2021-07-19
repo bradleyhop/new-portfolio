@@ -24,7 +24,7 @@ $not-green: #a5d6a7;
 $eggshell: #fff3e0;
 
 // override default vuetify fonts
-$Source-Sans-Pro: "Source Sans Pro", helvetica, sans-serif !important;
+$Source-Sans-Pro: 'Source Sans Pro', helvetica, sans-serif !important;
 $Poppins: 'Poppins', helvetica, sans-serif !important;
 
 // override vuetify default font use and size
@@ -32,30 +32,15 @@ $Poppins: 'Poppins', helvetica, sans-serif !important;
   [class*='text-'] {
     font-display: swap;
     font-family: $Poppins;
-
-    @media only screen and  (max-width: 800px) {
-      font-size: 14px;
-    }
   }
 
   font-display: swap;
   font-family: $Poppins;
-
-  @media only screen and  (max-width: 800px) {
-    font-size: 14px;
-  }
 }
 
 // reset all default decorations
 a {
   text-decoration: none;
-}
-
-// title for each page view
-.page-title {
-  font-size: 1.75em;
-  letter-spacing: 1px;
-  text-align: center;
 }
 
 // zoom on hover and color change for icon links

@@ -1,12 +1,14 @@
 <script>
 import ExpansionPanel from '@/components/ExpansionPanel.vue';
 import PortCard from '@/components/PortCard.vue';
+import PageHeader from '@/components/PageHeader.vue';
 import fCC from '@/assets/data/fcc-data.js';
 import extra from '@/assets/data/extra-data.js';
 
 export default {
   name: 'Portfolio',
   components: {
+    PageHeader,
     ExpansionPanel,
     PortCard,
   },
@@ -20,12 +22,20 @@ export default {
 
 <template>
   <v-container fill-height class="align-start" fluid>
+
+    <PageHeader
+      headerText="Portfolio"
+    />
+
+
     <v-row>
-      <v-col class="page-title"> PORTFOLIO </v-col>
+      <v-col align="center">
+        <h2 class="grey--text text--darken-2">Featured Projects</h2>
+      </v-col>
     </v-row>
 
     <!-- top three projects to highlight -->
-    <div class="d-flex flex-wrap justify-center justify-center">
+    <v-row align="center" class="d-flex flex-wrap justify-center">
       <!-- Choropleth Map project -->
       <PortCard
       :cardTitle="freecodecampData[0].projects[2].title"
@@ -59,14 +69,22 @@ export default {
         :imgAlt="freecodecampData[1].projects[1].img.alt"
         />
 
-    </div>
+    </v-row>
+
+    <v-row>
+      <v-col align="center">
+        <h2 class="grey--text text--darken-2">Complete Portfolio</h2>
+      </v-col>
+    </v-row>
 
     <v-row>
       <v-col cols="12" md="6" offset-md="3">
+
         <a href="https://freecodecamp.org" target="_blank" rel="norefferer noopener">
-          <div class="heading fcc-color">
-            freeCodeCamp <i class="fab fa-free-code-camp fcc-icon"></i>
-          </div>
+          <h3 class="fcc-color">
+            freeCodeCamp
+            <i class="fab fa-free-code-camp fcc-icon"></i>
+          </h3>
         </a>
         <p class="heading-copy">
           I use freeCodeCamp as my primary source of learning and project building. Courses are
@@ -83,7 +101,7 @@ export default {
 
         <ExpansionPanel :projectData="freecodecampData" class="expan-panel" />
 
-        <div class="heading">Extracurricular</div>
+        <h3>Extracurricular</h3>
         <p class="heading-copy">
           In addition to freeCodeCamp, I use other resources to increase my knowledge and practice
           my skills. Here are various algorithm exercises, classes, and projects not part of the
@@ -91,16 +109,13 @@ export default {
         </p>
 
         <ExpansionPanel :projectData="extraData" class="expan-panel" />
+
       </v-col>
     </v-row>
   </v-container>
 </template>
 
-<style lang="scss">
-.heading {
-  font-size: 1.5rem;
-}
-
+<style lang="scss" scoped>
 .fcc-color {
   color: #00641f;
 }
@@ -111,7 +126,6 @@ export default {
 
 .heading-copy {
   font-family: $Source-Sans-Pro;
-  font-size: 1.1em;
 }
 
 .expan-panel {

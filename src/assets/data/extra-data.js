@@ -8,7 +8,7 @@ const extra = [
     copy: "",
     projects: [
       {
-        title: "Art Institure of Chicago API Photo Matching App" ,
+        title: "Photo Matching App" ,
         copy: "Returns a work of art from a curated list with the same dominant color (in its top three dominant colors) given an uploaded image. A development tool for a data science grad student.",
         link: "https://bradleyhop.github.io/scratch-aic/",
         img: {
