@@ -14,7 +14,7 @@ export default {
   },
 
   data:() => ({
-    freecodecampData: fCC, // freecodecampData project data
+    freecodecampData: fCC, // freecodecamp project data
     extraData: extra, // extracurricular data
   }),
 };

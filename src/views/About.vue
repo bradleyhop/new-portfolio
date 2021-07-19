@@ -39,6 +39,15 @@ export default {
           am looking for a remote position.
         </p>
 
+        <!--
+           - <p class="me-copy">
+           -   My years as a dance instructor and in the service industry have given me many of the
+           -   soft skills needed for web development. Strong communication skills especially in step by
+           -   step instructions. Collaboration with other creators. Able to prioritize tasks in
+           -   realtime.
+           - </p>
+           -->
+
         <p class="me-copy">
           Away from the screen, I enjoy dancing and teaching the Lindy Hop and other vintage jazz
           dances, restoring and modding vintage video game systems, hiking and kayaking, and
