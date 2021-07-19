@@ -1,16 +1,21 @@
 <script>
+import PageHeader from '@/components/PageHeader.vue';
+
 export default {
   name: 'About',
+
+  components: {
+    PageHeader,
+  },
 };
 </script>
 
 <template>
   <v-container class="align-start about-container" fill-height fluid>
-    <v-row>
-      <v-col class="page-title">
-        ABOUT ME
-      </v-col>
-    </v-row>
+
+    <PageHeader
+      headerText="About Me"
+    />
 
     <v-row>
       <!-- 'cols' implies xs breakpoint in vuetify -->
@@ -86,7 +91,7 @@ export default {
   </v-container>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .about-container {
   background-color: $not-green;
 }

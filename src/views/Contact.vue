@@ -1,14 +1,20 @@
 <script>
+import PageHeader from '@/components/PageHeader.vue';
+
 export default {
   name: 'Contact',
+  components: {
+    PageHeader,
+  },
 };
 </script>
 
 <template>
   <v-container class="align-start contact-container" fill-height fluid>
-    <v-row>
-      <v-col class="page-title"> CONTACT </v-col>
-    </v-row>
+
+    <PageHeader
+      headerText="Contact"
+    />
 
     <v-row>
       <v-col>
@@ -19,7 +25,7 @@ export default {
     </v-row>
 
     <v-row class="justify-center">
-      <v-col cols="12" lg="4" sm="6" class="col-contact">
+      <v-col cols="10" lg="2" sm="4" class="col-contact">
         <div class="group-contact">
           <div class="link-container">
             <a
@@ -105,7 +111,7 @@ export default {
   </v-container>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .contact-container {
   background-color: $not-purple;
 }
@@ -131,8 +137,8 @@ export default {
 }
 
 .icon-contact {
+  float: right;
   font-size: 2em;
   vertical-align: middle;
-  float: right;
 }
 </style>
