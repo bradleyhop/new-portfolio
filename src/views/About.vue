@@ -97,7 +97,8 @@ export default {
 }
 
 .me-copy {
-  font-size: 1.1em;
+  font-family: $Source-Sans-Pro;
+  font-size: 1.1rem;
 }
 
 .list-group {

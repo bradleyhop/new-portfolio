@@ -125,7 +125,8 @@ export default {
 }
 
 .copy-contact {
-  font-size: 1.5em;
+  font-family: $Source-Sans-Pro;
+  font-size: 1.75rem;
   text-align: center;
 }
 
