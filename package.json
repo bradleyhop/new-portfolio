@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.12.1",
+    "gm": "^1.23.1",
     "vue": "^2.6.12",
     "vue-router": "^3.5.1",
     "vuetify": "^2.5.0"
