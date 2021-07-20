@@ -28,7 +28,7 @@ export default {
   border-width: 0;
   color: #424242;
   height: 2px;
-  margin: 0.5rem 0 0.5rem 0;
+  margin-bottom: 0.5rem;
   width: 11rem;
 }
 
