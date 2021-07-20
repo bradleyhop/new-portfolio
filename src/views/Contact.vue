@@ -25,7 +25,7 @@ export default {
     </v-row>
 
     <v-row class="justify-center">
-      <v-col cols="10" lg="2" sm="4" class="col-contact">
+      <v-col cols="10" lg="3" sm="4" class="col-contact">
         <div class="group-contact">
           <div class="link-container">
             <a

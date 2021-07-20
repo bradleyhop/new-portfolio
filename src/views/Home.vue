@@ -40,29 +40,38 @@ export default {
 }
 
 .hero-header {
-  font-size: 2em;
+  font-size: 1.5rem;
+
+  @media only screen and (min-width: 800px) {
+    font-size: 2rem;
+  }
 }
 
 .my-name {
   font-family: Raleway, sans-serif !important;
-  font-size: 5.5em;
+  font-size: 4.5rem;
   letter-spacing: 4px;
-  margin: 0 0 0.25em 2em;
+  margin: 0 0 0.25rem 0;
 
-  @media only screen and (max-width: 800px) {
-    margin: 0 0 0.25em 0;
+  @media only screen and (min-width: 800px) {
+    font-size: 5.5rem;
+    margin: 0 0 0.25rem 2rem;
   }
 }
 
 .hero-copy {
   font-family: $Poppins;
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+
+  @media only screen and (min-width: 800px) {
+    font-size: 1.5rem;
+  }
 }
 
 .portfolio-button {
   background-color: $secondary !important;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 
   &:hover {
     background-color: $secondaryLight !important;
