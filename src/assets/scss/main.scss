@@ -1,22 +1,20 @@
 // global scss file that mainly overrides vuetify defaults
 
 // color theme available as scss variables; also available as properties in vuetify components
-// see @/plugins/vuetify.js
+// see @/plugins/vuetify.js <- Vuetify.js will prioritze this file over all!!!
+//
+// If setting color with Vueitify property "color", Vueitify will reference it's plugin file. If we
+// want to use the color scheme with the same name scheme within the scss of the various vue files,
+// we need to define the colors here. I'm using Vuetify's color property exclusively for now.
 
 /*
- * $primary: #2196F3;
- * $primaryLight: #5ddef4;
- * $primaryDark: #007c91;
- * $secondary: #ffa000;
- * $secondaryLight: #ffc947;
- * $secondaryDark: #c66900;
+ * $primary: #424242;
+ * $primaryLight: #6d6d6d;
+ * $primaryDark: #1b1b1b;
+ * $secondary: #f47b00;
+ * $secondaryLight: #ffac42;
+ * $secondaryDark: #ba4c00;
  */
-$primary: #424242;
-$primaryLight: #6d6d6d;
-$primaryDark: #1b1b1b;
-$secondary: #f47b00;
-$secondaryLight: #ffac42;
-$secondaryDark: #ba4c00;
 
 // complementary colors
 $not-purple: #9fa8da;

@@ -20,7 +20,7 @@ export default {
         </div>
 
         <router-link :to="{ name: 'Portfolio' }">
-          <v-btn elevation="6" class="portfolio-button">
+          <v-btn elevation="6" large class="portfolio-button" color="secondary">
             Portfolio
           </v-btn>
         </router-link>
@@ -70,11 +70,6 @@ export default {
 }
 
 .portfolio-button {
-  background-color: $secondary !important;
   margin-bottom: 2rem;
-
-  &:hover {
-    background-color: $secondaryLight !important;
-  }
 }
 </style>

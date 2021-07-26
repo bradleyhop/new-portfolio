@@ -13,7 +13,7 @@ export default {
 
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer v-model="drawer" class="nav-drawer" app right temporary>
+    <v-navigation-drawer v-model="drawer" class="nav-drawer" app right temporary color="primaryLight">
       <v-list class="view-list">
         <router-link :to="{ name: 'Home' }">
           <v-list-item link>
@@ -92,11 +92,6 @@ export default {
 </template>
 
 <style lang="scss">
-.nav-drawer {
-  // background: url("assets/dots.png") repeat;
-  background-color: #fff;
-}
-
 .view-list {
   margin-top: 2rem;
 }
