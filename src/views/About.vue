@@ -19,7 +19,7 @@ export default {
 
     <v-row>
       <!-- 'cols' implies xs breakpoint in vuetify -->
-      <v-col align="center" cols="12" align-self="center" md="5" offset-md="1">
+      <v-col align="center" cols="12" align-self="center" md="3">
         <v-img
           class="rounded-circle elevation-8"
           src="@/assets/me.jpg"
@@ -52,7 +52,11 @@ export default {
           dances, restoring and modding vintage video game systems, hiking and kayaking, and
           collecting records.
         </p>
+      </v-col>
 
+      <v-divider vertical></v-divider>
+
+      <v-col cols="12" md="4">
         <div class="list-group me-copy">
           <div class="list-header">Current skill stack:</div>
           <ul>
