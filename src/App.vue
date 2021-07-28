@@ -13,7 +13,7 @@ export default {
 
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer v-model="drawer" class="nav-drawer" app right temporary color="primaryLight">
+    <v-navigation-drawer v-model="drawer" app right temporary color="primaryLight">
       <v-list class="view-list">
         <router-link :to="{ name: 'Home' }">
           <v-list-item link>
