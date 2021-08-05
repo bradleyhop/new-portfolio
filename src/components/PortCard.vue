@@ -16,8 +16,8 @@ export default {
       default: () => '',
     },
     imgSrc: {
-      type: String,
-      default: () => '',
+      type: Object,
+      default: () => {},
     },
     imgAlt: {
       type: String,

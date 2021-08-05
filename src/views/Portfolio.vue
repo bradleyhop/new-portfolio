@@ -41,9 +41,7 @@ export default {
       :cardTitle="freecodecampData[0].projects[2].title"
         :liveLink="freecodecampData[0].projects[2].link"
         :gitLink="freecodecampData[0].projects[2].github"
-        :imgSrc="
-        require(`@/assets/screenshots/${freecodecampData[0].projects[2].img.src}?vuetify-preload`)
-        "
+        :imgSrc="require(`@/assets/screenshots/${freecodecampData[0].projects[2].img.src}?vuetify-preload`)"
         :imgAlt="freecodecampData[0].projects[2].img.alt"
         />
 
