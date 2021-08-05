@@ -22,7 +22,7 @@ export default {
       <v-col align="center" cols="12" align-self="center" md="3">
         <v-img
           class="rounded-circle elevation-8"
-          src="@/assets/me.jpg"
+          src="@/assets/screenshots/me.jpg"
           alt="portrait of me looking confident"
           :height="$vuetify.breakpoint.xs ? '12em' : '16em'"
           :width="$vuetify.breakpoint.xs ? '12em' : '16em'"
@@ -31,7 +31,7 @@ export default {
         </v-img>
       </v-col>
 
-      <v-col cols="12" md="5">
+      <v-col cols="12" md="5" align-self="center">
         <p class="me-copy">
           I am genuinely curious and am always looking for new challenges. I love developing new
           skills and discovering technologies to produce easy both to use and maintain websites and
@@ -56,7 +56,7 @@ export default {
 
       <v-divider vertical></v-divider>
 
-      <v-col cols="12" md="4">
+      <v-col cols="12" md="4" align-self="center">
         <div class="list-group me-copy">
           <div class="list-header">Current skill stack:</div>
           <ul>
@@ -115,9 +115,5 @@ export default {
 
 .list-group {
   margin-bottom: 1em;
-}
-
-.me-img {
-  margin-bottom: 2em;
 }
 </style>
