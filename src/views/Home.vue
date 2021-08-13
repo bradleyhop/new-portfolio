@@ -21,7 +21,9 @@ export default {
 
         <router-link :to="{ name: 'Portfolio' }">
           <v-btn elevation="6" large class="portfolio-button" color="secondary">
-            Portfolio
+            <span class="button-text">
+              Portfolio
+            </span>
           </v-btn>
         </router-link>
       </v-col>
@@ -69,7 +71,7 @@ export default {
   }
 }
 
-.portfolio-button {
-  margin-bottom: 2rem;
+.button-text {
+  color: #000; // default white fails accessibility contrast
 }
 </style>
