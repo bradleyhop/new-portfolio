@@ -72,6 +72,7 @@ export default {
         </div>
         <!-- nav-list-container -->
 
+        <!-- brand image of myself pushed to the bottom of the slide-out menu -->
         <div class="nav-img">
           <v-img src="@/assets/og.jpg" contain> </v-img>
         </div>

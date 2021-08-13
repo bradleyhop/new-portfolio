@@ -34,10 +34,12 @@ export default {
               title="email me"
               aria-label="Bradley's email address"
             >
-              <p class="link-copy">
+            <div class="link-hover">
+              <span class="link-copy">
                 Email me
-                <i class="far fa-envelope icon-contact"></i>
-              </p>
+              </span>
+              <span class="far fa-envelope icon-contact"></span>
+            </div>
             </a>
           </div>
 
@@ -50,10 +52,12 @@ export default {
               rel="noopener noreferrer"
               aria-label="Bradley's GitHub profile"
             >
-              <p class="link-copy">
+            <div class="link-hover">
+              <span class="link-copy">
                 GitHub
-                <i class="fab fa-github icon-contact"></i>
-              </p>
+              </span>
+              <span class="fab fa-github icon-contact"></span>
+            </div>
             </a>
           </div>
 
@@ -66,10 +70,12 @@ export default {
               rel="noopener noreferrer"
               aria-label="Bradley's LinkedIn profile"
             >
-              <p class="link-copy">
+            <div class="link-hover">
+              <span class="link-copy">
                 LinkedIn
-                <i class="fab fa-linkedin-in icon-contact"></i>
-              </p>
+              </span>
+              <span class="fab fa-linkedin-in icon-contact"></span>
+            </div>
             </a>
           </div>
 
@@ -82,10 +88,12 @@ export default {
               rel="noopener noreferrer"
               aria-label="Bradley's free code camp profile"
             >
-              <p class="link-copy">
+            <div class="link-hover">
+              <span class="link-copy">
                 freeCodeCamp
-                <i class="fab fa-free-code-camp icon-contact"></i>
-              </p>
+              </span>
+              <span class="fab fa-free-code-camp icon-contact"></span>
+            </div>
             </a>
           </div>
 
@@ -98,10 +106,12 @@ export default {
               rel="noopener noreferrer"
               aria-label="Bradley's waka time profile"
             >
-              <p class="link-copy">
+            <div class="link-hover">
+              <span class="link-copy">
                 WakaTime
-                <i class="fas fa-stopwatch icon-contact"></i>
-              </p>
+              </span>
+              <span class="fas fa-stopwatch icon-contact"></span>
+            </div>
             </a>
           </div>
         </div>
@@ -116,6 +126,18 @@ export default {
   background-color: $not-purple;
 }
 
+.copy-contact {
+  font-family: $Source-Sans-Pro;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.link-container {
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
 .link-contact {
   color: #000 !important;
 
@@ -124,16 +146,8 @@ export default {
   }
 }
 
-.copy-contact {
-  font-family: $Source-Sans-Pro;
-  font-size: 1.75rem;
-  text-align: center;
-}
-
 .link-copy {
-  float: left;
   font-size: 1.5em;
-  line-height: 3em;
   width: 100%;
 }
 
