@@ -75,6 +75,7 @@ export default {
             lazy-validation
             method="post"
             data-netflify="true"
+            netflify
           >
             <v-container>
               <v-row>
