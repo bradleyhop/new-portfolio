@@ -68,7 +68,14 @@ export default {
           </v-snackbar>
 
           <!-- using zapier.com to handle form submission trigger to send form data to my gmail -->
-          <v-form ref="form" v-model="valid" @submit.prevent="submit" lazy-validation method="post">
+          <v-form
+            ref="form"
+            v-model="valid"
+            @submit.prevent="submit"
+            lazy-validation
+            method="post"
+            data-netflify="true"
+          >
             <v-container>
               <v-row>
                 <v-col cols="12" sm="6">
