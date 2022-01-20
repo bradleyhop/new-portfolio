@@ -27,7 +27,8 @@ export default {
       snackbar: false, // show snackbar after successful submission
       snackbarText: "Email submitted! Thank you!! ",
       timeout: 1500, // timeout for snackbar
-      textBodyDefault: "I'm currently testing this form functionality. Please use the email link below until I've sorted the bugs out ;)",
+      textBodyDefault:
+        "I'm currently testing this form functionality. Please use the email link below until I've sorted the bugs out ;)",
       defaultForm,
     };
   },
@@ -58,8 +59,8 @@ export default {
 <template>
   <v-container class="contact-container" fluid>
     <v-row justify="center">
-      <v-col md="6">
-        <v-card >
+      <v-col lg="6">
+        <v-card>
           <!-- show snackbar when form submitted successfully -->
           <v-snackbar v-model="snackbar" absolute top right color="success" :timeout="timeout">
             {{ snackbarText }}
@@ -67,12 +68,7 @@ export default {
           </v-snackbar>
 
           <!-- using zapier.com to handle form submission trigger to send form data to my gmail -->
-          <v-form
-            ref="form"
-            v-model="valid"
-            @submit.prevent="submit"
-            lazy-validation
-          >
+          <v-form ref="form" v-model="valid" @submit.prevent="submit" lazy-validation method="post">
             <v-container>
               <v-row>
                 <v-col cols="12" sm="6">
@@ -98,7 +94,7 @@ export default {
 
               <v-row>
                 <v-col>
-                  <v-textarea v-model="form.textbody" :rules="rules.text" required>
+                  <v-textarea v-model="form.textbody" :rules="rules.text" rows="4" required>
                     <template v-slot:label>
                       <div>{{ textBodyDefault }}</div>
                     </template>
@@ -108,7 +104,7 @@ export default {
             </v-container>
 
             <v-card-actions>
-              <v-btn @click="resetForm" color="secondaryLight"> Reset </v-btn>
+              <v-btn @click="resetForm" color="secondaryLight" type="reset"> Reset </v-btn>
               <v-spacer></v-spacer>
               <v-btn :disabled="!formIsValid" color="secondary" type="submit"> Submit </v-btn>
             </v-card-actions>
