@@ -1,10 +1,12 @@
 <script>
 import PageHeader from '@/components/PageHeader.vue';
+import ContactForm from '@/components/ContactForm.vue';
 
 export default {
   name: 'Contact',
   components: {
     PageHeader,
+    ContactForm,
   },
 };
 </script>
@@ -15,6 +17,8 @@ export default {
     <PageHeader
       headerText="Contact"
     />
+
+    <ContactForm />
 
     <v-row>
       <v-col>
@@ -27,6 +31,7 @@ export default {
     <v-row class="justify-center">
       <v-col cols="10" lg="3" sm="4" class="col-contact">
         <div class="group-contact">
+
           <div class="link-container">
             <a
               href="mailto:bradleywjsmith@gmail.com"

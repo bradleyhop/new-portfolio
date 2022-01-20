@@ -1,0 +1,126 @@
+<script>
+export default {
+  name: "ContactForm",
+
+  data: () => {
+    const defaultForm = Object.freeze({
+      email: "",
+      textbody: "",
+      name: "",
+    });
+
+    return {
+      valid: true,
+      form: Object.assign({}, defaultForm),
+      rules: {
+        emailRules: [
+          (v) => !!v || "E-mail is required",
+          // regex from https://stackoverflow.com/questions/46155/whats-the-best-way-to-validate-an-email-address-in-javascript
+          // isn't super robust, but good enough for our purposes here
+          (v) =>
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+              v
+            ) || "E-mail must be valid",
+        ],
+        text: [(val) => (val || "").length > 0 || "This field is required"],
+      },
+      snackbar: false, // show snackbar after successful submission
+      snackbarText: "Email submitted! Thank you!! ",
+      timeout: 1500, // timeout for snackbar
+      textBodyDefault: "I'm currently testing this form functionality. Please use the email link below until I've sorted the bugs out ;)",
+      defaultForm,
+    };
+  },
+
+  computed: {
+    formIsValid() {
+      return this.form.email && this.form.name && this.form.textbody;
+    },
+  },
+
+  methods: {
+    resetForm() {
+      this.form = Object.assign({}, this.defaultForm);
+      this.$refs.form.resetValidation();
+    },
+
+    submit() {
+      console.log(this.form);
+      this.snackbar = true;
+      this.resetForm();
+      // need code here to email it to myself
+      // setup NETLIFY to send form data to email
+    },
+  },
+};
+</script>
+
+<template>
+  <v-container class="contact-container" fluid>
+    <v-row justify="center">
+      <v-col md="6">
+        <v-card >
+          <!-- show snackbar when form submitted successfully -->
+          <v-snackbar v-model="snackbar" absolute top right color="success" :timeout="timeout">
+            {{ snackbarText }}
+            <v-icon dark> mdi-checkbox-marked-circle </v-icon>
+          </v-snackbar>
+
+          <!-- using zapier.com to handle form submission trigger to send form data to my gmail -->
+          <v-form
+            ref="form"
+            v-model="valid"
+            @submit.prevent="submit"
+            lazy-validation
+          >
+            <v-container>
+              <v-row>
+                <v-col cols="12" sm="6">
+                  <v-text-field
+                    v-model="form.name"
+                    :rules="rules.text"
+                    color="primary"
+                    label="Name"
+                    required
+                  >
+                  </v-text-field>
+                </v-col>
+                <v-col cols="12" sm="6">
+                  <v-text-field
+                    v-model="form.email"
+                    :rules="rules.emailRules"
+                    label="E-mail"
+                    required
+                  >
+                  </v-text-field>
+                </v-col>
+              </v-row>
+
+              <v-row>
+                <v-col>
+                  <v-textarea v-model="form.textbody" :rules="rules.text" required>
+                    <template v-slot:label>
+                      <div>{{ textBodyDefault }}</div>
+                    </template>
+                  </v-textarea>
+                </v-col>
+              </v-row>
+            </v-container>
+
+            <v-card-actions>
+              <v-btn @click="resetForm" color="secondaryLight"> Reset </v-btn>
+              <v-spacer></v-spacer>
+              <v-btn :disabled="!formIsValid" color="secondary" type="submit"> Submit </v-btn>
+            </v-card-actions>
+          </v-form>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<style lang="scss" scoped>
+.contact-container {
+  margin: 2rem 0;
+}
+</style>
