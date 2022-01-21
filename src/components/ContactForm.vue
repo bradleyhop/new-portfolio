@@ -1,4 +1,6 @@
 <script>
+import axios from 'axios';
+
 export default {
   name: "ContactForm",
 
@@ -7,6 +9,7 @@ export default {
       email: "",
       message: "",
       name: "",
+      speaker: "",
     });
 
     return {
@@ -45,7 +48,29 @@ export default {
       this.$refs.form.resetValidation();
     },
 
+    // encode form data into uri
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`,
+        )
+        .join('&');
+    },
+
     submit() {
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      };
+      // this.form.speaker = this.speaker.name;
+      axios.post(
+        '/',
+        this.encode({
+          'form-name': 'contact-speaker',
+          ...this.form,
+        }),
+        axiosConfig,
+      );
+
       this.snackbar = true;
       this.resetForm();
     },
@@ -70,7 +95,7 @@ export default {
             v-model="valid"
             @submit.prevent="submit"
             lazy-validation
-            method="POST"
+            method="post"
             name="contact-me"
           >
             <v-container>
