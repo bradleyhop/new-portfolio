@@ -5,7 +5,7 @@ export default {
   data: () => {
     const defaultForm = Object.freeze({
       email: "",
-      textbody: "",
+      message: "",
       name: "",
     });
 
@@ -35,7 +35,7 @@ export default {
 
   computed: {
     formIsValid() {
-      return this.form.email && this.form.name && this.form.textbody;
+      return this.form.email && this.form.name && this.form.message;
     },
   },
 
@@ -46,11 +46,8 @@ export default {
     },
 
     submit() {
-      console.log(this.form);
       this.snackbar = true;
       this.resetForm();
-      // need code here to email it to myself
-      // setup NETLIFY to send form data to email
     },
   },
 };
@@ -73,9 +70,8 @@ export default {
             v-model="valid"
             @submit.prevent="submit"
             lazy-validation
-            method="post"
-            data-netflify="true"
-            netflify
+            method="POST"
+            name="contact-me"
           >
             <v-container>
               <v-row>
@@ -84,7 +80,7 @@ export default {
                     v-model="form.name"
                     :rules="rules.text"
                     color="primary"
-                    label="Name"
+                    label="name"
                     required
                   >
                   </v-text-field>
@@ -93,7 +89,7 @@ export default {
                   <v-text-field
                     v-model="form.email"
                     :rules="rules.emailRules"
-                    label="E-mail"
+                    label="email"
                     required
                   >
                   </v-text-field>
@@ -102,7 +98,13 @@ export default {
 
               <v-row>
                 <v-col>
-                  <v-textarea v-model="form.textbody" :rules="rules.text" rows="4" required>
+                  <v-textarea
+                    v-model="form.message"
+                    :rules="rules.text"
+                    label="message"
+                    rows="4"
+                    required
+                  >
                     <template v-slot:label>
                       <div>{{ textBodyDefault }}</div>
                     </template>
