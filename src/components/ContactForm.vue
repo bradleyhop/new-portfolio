@@ -1,5 +1,5 @@
 <script>
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   name: "ContactForm",
@@ -9,7 +9,6 @@ export default {
       email: "",
       message: "",
       name: "",
-      speaker: "",
     });
 
     return {
@@ -28,10 +27,12 @@ export default {
         text: [(val) => (val || "").length > 0 || "This field is required"],
       },
       snackbar: false, // show snackbar after successful submission
-      snackbarText: "Email submitted! Thank you!! ",
-      timeout: 1500, // timeout for snackbar
+      textSnackbar: "",
+      colorSnackbar: "",
+      iconSnackbar: "",
+      timeout: 2500, // timeout for snackbar
       textBodyDefault:
-        "I'm currently testing this form functionality. Please use the email link below until I've sorted the bugs out ;)",
+        "Currently testing this form!! Please use the email link below until I've sorted the bugs out ;)",
       defaultForm,
     };
   },
@@ -51,27 +52,36 @@ export default {
     // encode form data into uri
     encode(data) {
       return Object.keys(data)
-        .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`,
-        )
-        .join('&');
+        .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+        .join("&");
     },
 
     submit() {
       const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        header: { "Content-Type": "application/x-www-form-urlencoded" },
       };
-      // this.form.speaker = this.speaker.name;
-      axios.post(
-        '/',
-        this.encode({
-          'form-name': 'contact-speaker',
-          ...this.form,
-        }),
-        axiosConfig,
-      );
+      axios
+        .post(
+          "/",
+          this.encode({
+            "form-name": "contact-me",
+            ...this.form,
+          }),
+          axiosConfig
+        )
+        .then(() => {
+          this.snackbar = true;
+          this.colorSnackbar = "success";
+          this.iconSnackbar = "mdi-checkbox-marked-circle";
+          this.textSnackbar = "Email submitted! Thank you!! ";
+        })
+        .catch(() => {
+          this.snackbar = true;
+          this.colorSnackbar = "error";
+          this.iconSnackbar = "mdi-alert-circle-outline";
+          this.textSnackbar = "Error! Form not submitted!";
+        });
 
-      this.snackbar = true;
       this.resetForm();
     },
   },
@@ -84,9 +94,9 @@ export default {
       <v-col lg="6">
         <v-card>
           <!-- show snackbar when form submitted successfully -->
-          <v-snackbar v-model="snackbar" absolute top right color="success" :timeout="timeout">
-            {{ snackbarText }}
-            <v-icon dark> mdi-checkbox-marked-circle </v-icon>
+          <v-snackbar v-model="snackbar" absolute top right :color=colorSnackbar :timeout="timeout">
+            {{ textSnackbar }}
+            <v-icon dark> {{ iconSnackbar }} </v-icon>
           </v-snackbar>
 
           <!-- using zapier.com to handle form submission trigger to send form data to my gmail -->
@@ -97,6 +107,9 @@ export default {
             lazy-validation
             method="post"
             name="contact-me"
+            netlify
+            data-netlify="true"
+            netlify-honeypot="bot-field"
           >
             <v-container>
               <v-row>
