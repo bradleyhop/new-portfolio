@@ -1,6 +1,4 @@
 <script>
-import axios from "axios";
-
 export default {
   name: "ContactForm",
 
@@ -12,7 +10,6 @@ export default {
     });
 
     return {
-      valid: true,
       form: Object.assign({}, defaultForm),
       rules: {
         emailRules: [
@@ -57,18 +54,14 @@ export default {
     },
 
     submit() {
-      const axiosConfig = {
-        header: { "Content-Type": "application/x-www-form-urlencoded" },
-      };
-      axios
-        .post(
-          "/",
-          this.encode({
-            "form-name": "contact-me",
-            ...this.form,
-          }),
-          axiosConfig
-        )
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encode({
+          "form-name": "contact-me",
+          ...this.form,
+        }),
+      })
         .then(() => {
           this.snackbar = true;
           this.colorSnackbar = "success";
@@ -79,7 +72,7 @@ export default {
           this.snackbar = true;
           this.colorSnackbar = "error";
           this.iconSnackbar = "mdi-alert-circle-outline";
-          this.textSnackbar = "Error! Form not submitted!";
+          this.textSnackbar = "Error! Form not submitted! ";
         });
 
       this.resetForm();
@@ -94,7 +87,14 @@ export default {
       <v-col lg="6">
         <v-card>
           <!-- show snackbar when form submitted successfully -->
-          <v-snackbar v-model="snackbar" absolute top right :color=colorSnackbar :timeout="timeout">
+          <v-snackbar
+            v-model="snackbar"
+            absolute
+            top
+            right
+            :color="colorSnackbar"
+            :timeout="timeout"
+          >
             {{ textSnackbar }}
             <v-icon dark> {{ iconSnackbar }} </v-icon>
           </v-snackbar>
@@ -102,14 +102,9 @@ export default {
           <!-- using zapier.com to handle form submission trigger to send form data to my gmail -->
           <v-form
             ref="form"
-            v-model="valid"
             @submit.prevent="submit"
-            lazy-validation
-            method="post"
             name="contact-me"
-            netlify
-            data-netlify="true"
-            netlify-honeypot="bot-field"
+            method="post"
           >
             <v-container>
               <v-row>
