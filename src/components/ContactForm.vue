@@ -29,7 +29,7 @@ export default {
       iconSnackbar: "",
       timeout: 2500, // timeout for snackbar
       textBodyDefault:
-        "Currently testing this form!! Please use the email link below until I've sorted the bugs out ;)",
+        "Am I the team member you're looking for?",
       defaultForm,
     };
   },
@@ -99,6 +99,7 @@ export default {
             <v-icon dark> {{ iconSnackbar }} </v-icon>
           </v-snackbar>
 
+          <!-- node dummy form in public/index.html so that Netlify can handle this form -->
           <!-- using zapier.com to handle form submission trigger to send form data to my gmail -->
           <v-form
             ref="form"

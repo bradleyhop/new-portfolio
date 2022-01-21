@@ -23,7 +23,7 @@ export default {
     <v-row>
       <v-col>
         <p class="copy-contact" title="hint: yes!">
-          <i>Am I the team member you're looking for?</i>
+          <i>Find me around the 'net</i>
         </p>
       </v-col>
     </v-row>
@@ -32,21 +32,23 @@ export default {
       <v-col cols="10" lg="3" sm="4" class="col-contact">
         <div class="group-contact">
 
-          <div class="link-container">
-            <a
-              href="mailto:bradleywjsmith@gmail.com"
-              class="link-contact"
-              title="email me"
-              aria-label="Bradley's email address"
-            >
-            <div class="link-hover">
-              <span class="link-copy">
-                Email me
-              </span>
-              <span class="far fa-envelope icon-contact"></span>
-            </div>
-            </a>
-          </div>
+          <!--
+             - <div class="link-container">
+             -   <a
+             -     href="mailto:bradleywjsmith@gmail.com"
+             -     class="link-contact"
+             -     title="email me"
+             -     aria-label="Bradley's email address"
+             -   >
+             -   <div class="link-hover">
+             -     <span class="link-copy">
+             -       Email me
+             -     </span>
+             -     <span class="far fa-envelope icon-contact"></span>
+             -   </div>
+             -   </a>
+             - </div>
+             -->
 
           <div class="link-container">
             <a
