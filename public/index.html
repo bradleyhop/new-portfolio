@@ -51,5 +51,12 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <!-- dummy form so netlify knows what's coming -->
+    <form name="contact-me" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="text" name="email" />
+      <textarea name="message"></textarea>
+    </form>
   </body>
 </html>
