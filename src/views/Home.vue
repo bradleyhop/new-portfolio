@@ -20,12 +20,29 @@ export default {
         </div>
 
         <router-link :to="{ name: 'Portfolio' }">
-          <v-btn elevation="6" large class="portfolio-button" color="secondary">
-            <span class="button-text">
-              Portfolio
-            </span>
+          <v-btn elevation="6" large class="portfolio-button mb-4" color="secondary"
+            aria-label="Bradley's Portfolio" title="Bradley's Portfolio">
+            Portfolio
           </v-btn>
         </router-link>
+
+        <!--
+           - [> TODO: add link to gihub  <]
+           - <div>
+           -   <a
+           -     href="https://github.com/bradleyhop"
+           -     target="_blank"
+           -     title="Bradley's GitHub Profile"
+           -     rel="noopener noreferrer"
+           -     aria-label="Bradley's GitHub profile"
+           -     >
+           -     <v-btn large color="#f5f5f5" class="mb-4">
+           -       <span class="fab fa-github icon-contact"></span>
+           -       GitHub
+           -     </v-btn>
+           -   </a>
+           - </div> -->
+
       </v-col>
     </v-row>
   </v-container>
@@ -69,9 +86,5 @@ export default {
   @media only screen and (min-width: 800px) {
     font-size: 1.5rem;
   }
-}
-
-.button-text {
-  color: #000; // default white fails accessibility contrast
 }
 </style>
