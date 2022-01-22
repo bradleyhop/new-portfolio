@@ -20,109 +20,62 @@ export default {
 
     <ContactForm />
 
-    <v-row>
-      <v-col>
-        <p class="copy-contact" title="hint: yes!">
-          <i>Find me around the 'net</i>
-        </p>
-      </v-col>
-    </v-row>
+    <v-row justify="center">
+      <v-col lg="6" class="d-flex justify-space-around flex-wrap">
+        <a
+          href="https://github.com/bradleyhop"
+          target="_blank"
+          title="Bradley's GitHub Profile"
+          rel="noopener noreferrer"
+          aria-label="Bradley's GitHub profile"
+          >
+          <v-btn large color="#f5f5f5" class="mb-4">
+            <span class="fab fa-github icon-contact"></span>
+            GitHub
+          </v-btn>
+        </a>
 
-    <v-row class="justify-center">
-      <v-col cols="10" lg="3" sm="4" class="col-contact">
-        <div class="group-contact">
+        <a
+          href="https://www.linkedin.com/in/bradley-smith-328235112/"
+          target="_blank"
+          title="LinkedIn"
+          rel="noopener noreferrer"
+          aria-label="Bradley's LinkedIn profile"
+          >
+          <v-btn large color="#0077b5" class="white--text mb-4">
+            <span class="fab fa-linkedin-in icon-contact"></span>
+            LinkedIn
+          </v-btn>
+        </a>
 
-          <!--
-             - <div class="link-container">
-             -   <a
-             -     href="mailto:bradleywjsmith@gmail.com"
-             -     class="link-contact"
-             -     title="email me"
-             -     aria-label="Bradley's email address"
-             -   >
-             -   <div class="link-hover">
-             -     <span class="link-copy">
-             -       Email me
-             -     </span>
-             -     <span class="far fa-envelope icon-contact"></span>
-             -   </div>
-             -   </a>
-             - </div>
-             -->
 
-          <div class="link-container">
-            <a
-              href="https://github.com/bradleyhop"
-              class="link-contact"
-              target="_blank"
-              title="GitHub"
-              rel="noopener noreferrer"
-              aria-label="Bradley's GitHub profile"
-            >
-            <div class="link-hover">
-              <span class="link-copy">
-                GitHub
-              </span>
-              <span class="fab fa-github icon-contact"></span>
-            </div>
-            </a>
-          </div>
+        <a
+          href="https://www.freecodecamp.org/bradleyhop"
+          target="_blank"
+          title="freeCodeCamp"
+          rel="noopener noreferrer"
+          aria-label="Bradley's free code camp profile"
+          >
+          <v-btn large color="#006400" class="white--text mb-4">
+            <span class="fab fa-free-code-camp icon-contact"></span>
+            FreeCodeCamp
+          </v-btn>
+        </a>
 
-          <div class="link-container">
-            <a
-              href="https://www.linkedin.com/in/bradley-smith-328235112/"
-              class="link-contact"
-              target="_blank"
-              title="LinkedIn"
-              rel="noopener noreferrer"
-              aria-label="Bradley's LinkedIn profile"
-            >
-            <div class="link-hover">
-              <span class="link-copy">
-                LinkedIn
-              </span>
-              <span class="fab fa-linkedin-in icon-contact"></span>
-            </div>
-            </a>
-          </div>
 
-          <div class="link-container">
-            <a
-              href="https://www.freecodecamp.org/bradleyhop"
-              class="link-contact"
-              target="_blank"
-              title="freeCodeCamp"
-              rel="noopener noreferrer"
-              aria-label="Bradley's free code camp profile"
-            >
-            <div class="link-hover">
-              <span class="link-copy">
-                freeCodeCamp
-              </span>
-              <span class="fab fa-free-code-camp icon-contact"></span>
-            </div>
-            </a>
-          </div>
+        <a
+          href="https://wakatime.com/@bradleyhop"
+          target="_blank"
+          title="WakaTime"
+          rel="noopener noreferrer"
+          aria-label="Bradley's waka time profile"
+          >
+          <v-btn large color="#527da4" class="white--text mb-4">
+            <span class="fas fa-stopwatch icon-contact"></span>
+            WakaTime
+          </v-btn>
+        </a>
 
-          <div class="link-container">
-            <a
-              href="https://wakatime.com/@bradleyhop"
-              class="link-contact"
-              target="_blank"
-              title="WakaTime"
-              rel="noopener noreferrer"
-              aria-label="Bradley's waka time profile"
-            >
-            <div class="link-hover">
-              <span class="link-copy">
-                WakaTime
-              </span>
-              <span class="fas fa-stopwatch icon-contact"></span>
-            </div>
-            </a>
-          </div>
-        </div>
-        <!-- group-contact -->
       </v-col>
     </v-row>
   </v-container>
@@ -133,34 +86,9 @@ export default {
   background-color: $not-purple;
 }
 
-.copy-contact {
-  font-family: $Source-Sans-Pro;
-  font-size: 1.75rem;
-  text-align: center;
-}
-
-.link-container {
-  display: inline-block;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
-.link-contact {
-  color: #000 !important;
-
-  &:hover {
-    color: #fff !important;
-  }
-}
-
-.link-copy {
-  font-size: 1.5em;
-  width: 100%;
-}
-
 .icon-contact {
-  float: right;
-  font-size: 2em;
+  font-size: 1.5em;
+  margin-right: 0.5rem;
   vertical-align: middle;
 }
 </style>

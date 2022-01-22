@@ -23,14 +23,14 @@ export default {
         ],
         text: [(val) => (val || "").length > 0 || "This field is required"],
       },
-      snackbar: false, // show snackbar after successful submission
+      textBodyDefault:
+        "message",
+      defaultForm, // form object
+      snackbar: false, // show snackbar after form submission
       textSnackbar: "",
       colorSnackbar: "",
       iconSnackbar: "",
       timeout: 2500, // timeout for snackbar
-      textBodyDefault:
-        "Am I the team member you're looking for?",
-      defaultForm,
     };
   },
 
@@ -54,6 +54,8 @@ export default {
     },
 
     submit() {
+      // we'er using Netlify to handle form submission; here's their article on doing so with Vue:
+      // https://www.netlify.com/blog/2018/09/07/how-to-integrate-netlify-forms-in-a-vue-app/
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -66,7 +68,7 @@ export default {
           this.snackbar = true;
           this.colorSnackbar = "success";
           this.iconSnackbar = "mdi-checkbox-marked-circle";
-          this.textSnackbar = "Email submitted! Thank you!! ";
+          this.textSnackbar = "Form submitted! Thank you!! ";
         })
         .catch(() => {
           this.snackbar = true;
