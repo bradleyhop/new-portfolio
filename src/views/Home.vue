@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'Home',
+  name: "Home",
 };
 </script>
 
@@ -20,8 +20,14 @@ export default {
         </div>
 
         <router-link :to="{ name: 'Portfolio' }">
-          <v-btn elevation="6" large class="portfolio-button mb-4" color="secondary"
-            aria-label="Bradley's Portfolio" title="Bradley's Portfolio">
+          <v-btn
+            elevation="6"
+            large
+            class="portfolio-button mb-4"
+            color="secondary"
+            aria-label="Bradley's Portfolio"
+            title="Bradley's Portfolio"
+          >
             Portfolio
           </v-btn>
         </router-link>
@@ -42,7 +48,6 @@ export default {
            -     </v-btn>
            -   </a>
            - </div> -->
-
       </v-col>
     </v-row>
   </v-container>

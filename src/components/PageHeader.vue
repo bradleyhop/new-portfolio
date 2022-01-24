@@ -1,26 +1,25 @@
 <script>
 export default {
-  name: 'PageHeader',
+  name: "PageHeader",
 
   props: {
     headerText: {
       type: String,
-      default: () => '',
+      default: () => "",
     },
   },
-}
-</script>>
+};
+</script>
 
 <template>
   <v-row>
     <v-col align="center">
       <h1>{{ headerText }}</h1>
-      <hr class="header-break">
-      <hr class="second-header-break">
+      <hr class="header-break" />
+      <hr class="second-header-break" />
     </v-col>
   </v-row>
 </template>
-
 
 <style lang="scss" scoped>
 .header-break {
@@ -38,5 +37,4 @@ export default {
   margin: 0;
   width: 5rem;
 }
-</style>>
-
+</style>
