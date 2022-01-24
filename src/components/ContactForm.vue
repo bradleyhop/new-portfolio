@@ -23,8 +23,7 @@ export default {
         ],
         text: [(val) => (val || "").length > 0 || "This field is required"],
       },
-      textBodyDefault:
-        "message",
+      textBodyDefault: "message",
       defaultForm, // form object
       snackbar: false, // show snackbar after form submission
       textSnackbar: "",
@@ -103,12 +102,7 @@ export default {
 
           <!-- node dummy form in public/index.html so that Netlify can handle this form -->
           <!-- using zapier.com to handle form submission trigger to send form data to my gmail -->
-          <v-form
-            ref="form"
-            @submit.prevent="submit"
-            name="contact-me"
-            method="post"
-          >
+          <v-form ref="form" @submit.prevent="submit" name="contact-me" method="post">
             <v-container>
               <v-row>
                 <v-col cols="12" sm="6">

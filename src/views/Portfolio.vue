@@ -1,19 +1,19 @@
 <script>
-import ExpansionPanel from '@/components/ExpansionPanel.vue';
-import PortCard from '@/components/PortCard.vue';
-import PageHeader from '@/components/PageHeader.vue';
-import fCC from '@/assets/data/fcc-data.js';
-import extra from '@/assets/data/extra-data.js';
+import ExpansionPanel from "@/components/ExpansionPanel.vue";
+import PortCard from "@/components/PortCard.vue";
+import PageHeader from "@/components/PageHeader.vue";
+import fCC from "@/assets/data/fcc-data.js";
+import extra from "@/assets/data/extra-data.js";
 
 export default {
-  name: 'Portfolio',
+  name: "Portfolio",
   components: {
     PageHeader,
     ExpansionPanel,
     PortCard,
   },
 
-  data:() => ({
+  data: () => ({
     freecodecampData: fCC, // freecodecamp project data
     extraData: extra, // extracurricular data
   }),
@@ -22,11 +22,7 @@ export default {
 
 <template>
   <v-container fill-height class="align-start" fluid>
-
-    <PageHeader
-      headerText="Portfolio"
-    />
-
+    <PageHeader headerText="Portfolio" />
 
     <v-row>
       <v-col align="center">
@@ -38,35 +34,36 @@ export default {
     <v-row align="center" class="d-flex flex-wrap justify-center">
       <!-- Choropleth Map project -->
       <PortCard
-      :cardTitle="freecodecampData[0].projects[2].title"
+        :cardTitle="freecodecampData[0].projects[2].title"
         :liveLink="freecodecampData[0].projects[2].link"
         :gitLink="freecodecampData[0].projects[2].github"
-        :imgSrc="require(`@/assets/screenshots/${freecodecampData[0].projects[2].img.src}?vuetify-preload`)"
+        :imgSrc="
+          require(`@/assets/screenshots/${freecodecampData[0].projects[2].img.src}?vuetify-preload`)
+        "
         :imgAlt="freecodecampData[0].projects[2].img.alt"
-        />
+      />
 
       <!-- AIC Color Match -->
       <PortCard
-      :cardTitle="extraData[0].projects[0].title"
+        :cardTitle="extraData[0].projects[0].title"
         :liveLink="extraData[0].projects[0].link"
         :gitLink="extraData[0].projects[0].github"
         :imgSrc="
-        require(`@/assets/screenshots/${extraData[0].projects[0].img.src}?vuetify-preload`)
+          require(`@/assets/screenshots/${extraData[0].projects[0].img.src}?vuetify-preload`)
         "
         :imgAlt="extraData[0].projects[0].img.alt"
-        />
+      />
 
       <!-- Pomodoro Timer -->
       <PortCard
-      :cardTitle="freecodecampData[1].projects[1].title"
+        :cardTitle="freecodecampData[1].projects[1].title"
         :liveLink="freecodecampData[1].projects[1].link"
         :gitLink="freecodecampData[1].projects[1].github"
         :imgSrc="
-        require(`@/assets/screenshots/${freecodecampData[1].projects[1].img.src}?vuetify-preload`)
+          require(`@/assets/screenshots/${freecodecampData[1].projects[1].img.src}?vuetify-preload`)
         "
         :imgAlt="freecodecampData[1].projects[1].img.alt"
-        />
-
+      />
     </v-row>
 
     <v-row>
@@ -77,7 +74,6 @@ export default {
 
     <v-row>
       <v-col cols="12" md="6" offset-md="3">
-
         <a href="https://freecodecamp.org" target="_blank" rel="norefferer noopener">
           <h3 class="fcc-color">
             freeCodeCamp
@@ -107,7 +103,6 @@ export default {
         </p>
 
         <ExpansionPanel :projectData="extraData" class="expan-panel" />
-
       </v-col>
     </v-row>
   </v-container>

@@ -1,9 +1,9 @@
 <script>
 export default {
-  name: 'ExpansionPanel',
+  name: "ExpansionPanel",
 
-  data:() => ({
-      overlay: false, // state of hover for image overlay for project links
+  data: () => ({
+    overlay: false, // state of hover for image overlay for project links
   }),
 
   props: {
@@ -12,7 +12,6 @@ export default {
       default: () => [],
     },
   },
-
 };
 </script>
 
@@ -50,7 +49,7 @@ export default {
                     v-if="projectItem.img.src"
                     :src="require(`@/assets/screenshots/${projectItem.img.src}?vuetify-preload`)"
                     :alt="projectItem.img.alt"
-                    :aspect-ratio="16/9"
+                    :aspect-ratio="16 / 9"
                     class="mx-auto"
                     width="30em"
                   >

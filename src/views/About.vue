@@ -1,8 +1,8 @@
 <script>
-import PageHeader from '@/components/PageHeader.vue';
+import PageHeader from "@/components/PageHeader.vue";
 
 export default {
-  name: 'About',
+  name: "About",
 
   components: {
     PageHeader,
@@ -12,10 +12,7 @@ export default {
 
 <template>
   <v-container class="align-start about-container" fill-height fluid>
-
-    <PageHeader
-      headerText="About Me"
-    />
+    <PageHeader headerText="About Me" />
 
     <v-row>
       <!-- 'cols' implies xs breakpoint in vuetify -->
@@ -40,10 +37,10 @@ export default {
         </p>
 
         <p class="me-copy">
-          I look forward to transferring the soft skills I have acquired in the service industry and as a
-          dance instructor and performer: strong communication skills especially in instructions and
-          empathy; collaboration with other creators; ability to prioritize tasks in
-          real-time to swiftly and efficiently complete tasks on time; mostly, I enjoy helping
+          I look forward to transferring the soft skills I have acquired in the service industry and
+          as a dance instructor and performer: strong communication skills especially in
+          instructions and empathy; collaboration with other creators; ability to prioritize tasks
+          in real-time to swiftly and efficiently complete tasks on time; mostly, I enjoy helping
           others and problem solving.
         </p>
 
@@ -92,8 +89,8 @@ export default {
               Bootstrap
             </li>
             <li>
-              Various javascript libraries including D3.js, ProgressBar.js, math.js,
-              and S3 and SQS Amazon Web Services
+              Various javascript libraries including D3.js, ProgressBar.js, math.js, and S3 and SQS
+              Amazon Web Services
             </li>
           </ul>
         </div>

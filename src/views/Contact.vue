@@ -1,9 +1,9 @@
 <script>
-import PageHeader from '@/components/PageHeader.vue';
-import ContactForm from '@/components/ContactForm.vue';
+import PageHeader from "@/components/PageHeader.vue";
+import ContactForm from "@/components/ContactForm.vue";
 
 export default {
-  name: 'Contact',
+  name: "Contact",
   components: {
     PageHeader,
     ContactForm,
@@ -13,10 +13,11 @@ export default {
 
 <template>
   <v-container class="align-start contact-container" fill-height fluid>
+    <PageHeader headerText="Contact" />
 
-    <PageHeader
-      headerText="Contact"
-    />
+    <v-row justify="center">
+      <h1 class="mx-1 text-center"><i>Am I the Team Member You're Looking For?</i></h1>
+    </v-row>
 
     <ContactForm />
 
@@ -28,8 +29,8 @@ export default {
           title="Bradley's GitHub Profile"
           rel="noopener noreferrer"
           aria-label="Bradley's GitHub profile"
-          >
-          <v-btn large color="#f5f5f5" class="mb-4">
+        >
+          <v-btn large color="#f5f5f5" class="mb-4" elevation="6">
             <span class="fab fa-github icon-contact"></span>
             GitHub
           </v-btn>
@@ -41,13 +42,12 @@ export default {
           title="LinkedIn"
           rel="noopener noreferrer"
           aria-label="Bradley's LinkedIn profile"
-          >
-          <v-btn large color="#0077b5" class="white--text mb-4">
+        >
+          <v-btn large color="#0077b5" class="white--text mb-4" elevation="6">
             <span class="fab fa-linkedin-in icon-contact"></span>
             LinkedIn
           </v-btn>
         </a>
-
 
         <a
           href="https://www.freecodecamp.org/bradleyhop"
@@ -55,13 +55,12 @@ export default {
           title="freeCodeCamp"
           rel="noopener noreferrer"
           aria-label="Bradley's free code camp profile"
-          >
-          <v-btn large color="#006400" class="white--text mb-4">
+        >
+          <v-btn large color="#006400" class="white--text mb-4" elevation="6">
             <span class="fab fa-free-code-camp icon-contact"></span>
             FreeCodeCamp
           </v-btn>
         </a>
-
 
         <a
           href="https://wakatime.com/@bradleyhop"
@@ -69,13 +68,12 @@ export default {
           title="WakaTime"
           rel="noopener noreferrer"
           aria-label="Bradley's waka time profile"
-          >
-          <v-btn large color="#527da4" class="white--text mb-4">
+        >
+          <v-btn large color="#527da4" class="white--text mb-4" elevation="6">
             <span class="fas fa-stopwatch icon-contact"></span>
             WakaTime
           </v-btn>
         </a>
-
       </v-col>
     </v-row>
   </v-container>
