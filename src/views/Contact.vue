@@ -62,18 +62,6 @@ export default {
           </v-btn>
         </a>
 
-        <a
-          href="https://wakatime.com/@bradleyhop"
-          target="_blank"
-          title="WakaTime"
-          rel="noopener noreferrer"
-          aria-label="Bradley's waka time profile"
-        >
-          <v-btn large color="#527da4" class="white--text mb-4" elevation="6">
-            <span class="fas fa-stopwatch icon-contact"></span>
-            WakaTime
-          </v-btn>
-        </a>
       </v-col>
     </v-row>
   </v-container>
