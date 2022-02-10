@@ -12,18 +12,14 @@ export default {
           Hello, my name is
           <br />
         </div>
-        <div class="my-name header-text">
-          Bradley Smith
-        </div>
-        <div class="hero-copy">
-          I am a web developer based in Maine. I build great websites.
-        </div>
+        <div class="my-name header-text">Bradley Smith</div>
+        <div class="hero-copy">I am a web developer based in Maine. I build great websites.</div>
 
         <router-link :to="{ name: 'Portfolio' }">
           <v-btn
             elevation="6"
             large
-            class="portfolio-button mb-4"
+            class="portfolio-button mb-4 font-weight-bold"
             color="secondary"
             aria-label="Bradley's Portfolio"
             title="Bradley's Portfolio"
@@ -60,6 +56,7 @@ export default {
 
 .header-text {
   font-family: $Poppins;
+  font-display: swap;
   line-height: 1.25;
 }
 
@@ -73,6 +70,7 @@ export default {
 
 .my-name {
   font-family: Raleway, sans-serif !important;
+  font-display: swap;
   font-size: 4.5rem;
   letter-spacing: 4px;
   margin: 0 0 0.25rem 0;
@@ -85,6 +83,7 @@ export default {
 
 .hero-copy {
   font-family: $Poppins;
+  font-display: swap;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 

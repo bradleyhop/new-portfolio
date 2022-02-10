@@ -133,7 +133,7 @@ const fCC = [
     copy: "The second certification of the freeCodeCamp curriculum. This sections teaches javascript syntax and data structures. I have solved all of the three levels of algorithm challenges. This section deals with solely with learning basic programming skills through javascript.",
     projects: [
       {
-        title: "Javascript Algorithms and Data Structures" ,
+        title: "Javascript Algorithms and Data Structures",
         link: "https://github.com/bradleyhop/freeCodeCampAlgorithms",
         img: {
           src: "jsCert.jpg",
@@ -154,7 +154,7 @@ const fCC = [
           src: "responsiveCert.jpg",
           alt: "certificate for responsive web design",
         },
-        github: ""
+        github: "",
       },
       {
         title: "Personal Profile",
@@ -166,7 +166,7 @@ const fCC = [
         github: "https://github.com/bradleyhop/bradleyhop.github.io",
       },
       {
-        title: "Technical Documentation" ,
+        title: "Technical Documentation",
         link: "https://bradleyhop.github.io/techDoc/techDoc.html",
         img: {
           src: "fccTechDoc.jpg",

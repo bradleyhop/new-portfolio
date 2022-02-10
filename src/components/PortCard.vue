@@ -1,4 +1,5 @@
-<script> export default {
+<script>
+export default {
   name: "PortCard",
 
   props: {
@@ -32,15 +33,11 @@
     <v-card-title>{{ cardTitle }}</v-card-title>
     <v-card-subtitle>
       <a :href="liveLink" target="_blank" rel="noopener noreferrer" title="live demo">
-        <v-icon size="2.5rem" class="icon-link card-link">
-          mdi-open-in-new
-        </v-icon>
+        <v-icon size="2.5rem" class="icon-link card-link"> mdi-open-in-new </v-icon>
       </a>
 
       <a :href="gitLink" target="_blank" rel="noopener noreferrer" title="source code">
-        <v-icon size="2.5rem" class="icon-link card-link">
-          mdi-github
-        </v-icon>
+        <v-icon size="2.5rem" class="icon-link card-link"> mdi-github </v-icon>
       </a>
     </v-card-subtitle>
   </v-card>

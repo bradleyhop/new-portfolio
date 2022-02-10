@@ -23,9 +23,7 @@ export default {
                   <v-icon color="secondary">mdi-home</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
-                  <v-list-item-title>
-                    Home
-                  </v-list-item-title>
+                  <v-list-item-title> Home </v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </router-link>
@@ -36,9 +34,7 @@ export default {
                   <v-icon color="secondary">mdi-cards-heart</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
-                  <v-list-item-title>
-                    About Me
-                  </v-list-item-title>
+                  <v-list-item-title> About Me </v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </router-link>
@@ -49,9 +45,7 @@ export default {
                   <v-icon color="secondary">mdi-code-tags</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
-                  <v-list-item-title>
-                    Portfolio
-                  </v-list-item-title>
+                  <v-list-item-title> Portfolio </v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </router-link>
@@ -62,9 +56,7 @@ export default {
                   <v-icon color="secondary">mdi-email</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
-                  <v-list-item-title>
-                    Contact
-                  </v-list-item-title>
+                  <v-list-item-title> Contact </v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </router-link>

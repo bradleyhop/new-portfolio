@@ -119,6 +119,7 @@ export default {
 
 .heading-copy {
   font-family: $Source-Sans-Pro;
+  font-family: swap;
   font-size: 1.1rem;
 }
 

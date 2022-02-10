@@ -32,16 +32,16 @@ export default {
         <p class="me-copy">
           I am genuinely curious and am always looking for new challenges. I love developing new
           skills and discovering technologies to produce easy both to use and maintain websites and
-          applications. As a recent transplant from Chicago to the countryside in Maine, I
-          am looking for a remote position.
+          applications. As a recent transplant from Chicago to the countryside in Maine, I am
+          looking for a remote position.
         </p>
 
         <p class="me-copy">
           I look forward to transferring the soft skills I have acquired in the service industry and
           as a dance instructor and performer: strong communication skills especially in
           instructions and empathy; collaboration with other creators; ability to prioritize tasks
-          in real-time to swiftly and efficiently complete tasks on time. I enjoy helping
-          others and problem solving.
+          in real-time to swiftly and efficiently complete tasks on time. I enjoy helping others and
+          problem solving.
         </p>
 
         <p class="me-copy">
@@ -56,24 +56,12 @@ export default {
         <div class="list-group me-copy">
           <div class="list-header">Current skill stack:</div>
           <ul>
-            <li>
-              HTML5
-            </li>
-            <li>
-              CSS3
-            </li>
-            <li>
-              Javascript
-            </li>
-            <li>
-              Vue.js, Vue CLI, Vue Router, Vuetify
-            </li>
-            <li>
-              SASS
-            </li>
-            <li>
-              IDE is Vim (with plugins) within Tmux
-            </li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>Vue.js, Vue CLI, Vue Router, Vuetify</li>
+            <li>SASS</li>
+            <li>IDE is Vim (with plugins) within Tmux</li>
           </ul>
         </div>
         <!-- list-group -->
@@ -81,19 +69,13 @@ export default {
         <div class="list-group me-copy">
           <div class="list-header">I've built projects using:</div>
           <ul>
-            <li>
-              JQuery
-            </li>
-            <li>
-              Bootstrap
-            </li>
+            <li>JQuery</li>
+            <li>Bootstrap</li>
             <li>
               Various javascript libraries including D3.js, ProgressBar.js, math.js, and S3 and SQS
               Amazon Web Services
             </li>
-            <li>
-              Currently exploring WordPress plugins and Gutenberg blocks using PHP and Vue.js
-            </li>
+            <li>Currently exploring WordPress plugins and Gutenberg blocks using PHP and Vue.js</li>
           </ul>
         </div>
         <!-- list-group -->
@@ -109,6 +91,7 @@ export default {
 
 .me-copy {
   font-family: $Source-Sans-Pro;
+  font-display: swap;
   font-size: 1.1rem;
 }
 
