@@ -61,7 +61,6 @@ export default {
             FreeCodeCamp
           </v-btn>
         </a>
-
       </v-col>
     </v-row>
   </v-container>

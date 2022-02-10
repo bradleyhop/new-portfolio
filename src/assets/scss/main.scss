@@ -22,12 +22,12 @@ $not-green: #a5d6a7;
 $eggshell: #fff3e0;
 
 // override default vuetify fonts
-$Source-Sans-Pro: 'Source Sans Pro', helvetica, sans-serif !important;
-$Poppins: 'Poppins', helvetica, sans-serif !important;
+$Source-Sans-Pro: "Source Sans Pro", helvetica, sans-serif !important;
+$Poppins: "Poppins", helvetica, sans-serif !important;
 
 // override vuetify default font use and size
 .v-application {
-  [class*='text-'] {
+  [class*="text-"] {
     font-display: swap;
     font-family: $Poppins;
   }

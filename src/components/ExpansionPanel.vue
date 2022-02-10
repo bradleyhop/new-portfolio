@@ -61,9 +61,7 @@ export default {
                           rel="noopener noreferrer"
                           title="live demo"
                         >
-                          <v-icon size="5em" class="icon-link">
-                            mdi-open-in-new
-                          </v-icon>
+                          <v-icon size="5em" class="icon-link"> mdi-open-in-new </v-icon>
                         </a>
 
                         <a
@@ -73,9 +71,7 @@ export default {
                           rel="noopener noreferrer"
                           title="source code"
                         >
-                          <v-icon size="5em" class="icon-link">
-                            mdi-github
-                          </v-icon>
+                          <v-icon size="5em" class="icon-link"> mdi-github </v-icon>
                         </a>
                       </v-overlay>
                     </v-fade-transition>
@@ -94,6 +90,7 @@ export default {
 <style lang="scss" scoped>
 .cert-copy {
   font-family: $Source-Sans-Pro;
+  font-display: swap;
   margin-bottom: 1rem;
 }
 </style>
