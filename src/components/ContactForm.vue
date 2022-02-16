@@ -63,17 +63,22 @@ export default {
           ...this.form,
         }),
       })
-        .then(() => {
-          this.snackbar = true;
-          this.colorSnackbar = "success";
-          this.iconSnackbar = "mdi-checkbox-marked-circle";
-          this.textSnackbar = "Form submitted! Thank you!! ";
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(response.statusText);
+          } else {
+            this.snackbar = true;
+            this.colorSnackbar = "success";
+            this.iconSnackbar = "mdi-checkbox-marked-circle";
+            this.textSnackbar = "Form submitted! Thank you!! ";
+          }
         })
-        .catch(() => {
+        .catch((error) => {
           this.snackbar = true;
           this.colorSnackbar = "error";
           this.iconSnackbar = "mdi-alert-circle-outline";
-          this.textSnackbar = "Error! Form not submitted! ";
+          this.textSnackbar = "Error! Form not submitted: ";
+          this.textSnackbar += error;
         });
 
       this.resetForm();
@@ -146,7 +151,7 @@ export default {
             <v-card-actions>
               <v-btn @click="resetForm" color="secondaryLight" type="reset"> Reset </v-btn>
               <v-spacer></v-spacer>
-              <v-btn :disabled="!formIsValid" color="secondary" type="submit"> Submit </v-btn>
+              <v-btn :disabled="!formIsValid" color="secondary" type="submit" class="black--text"> Submit </v-btn>
             </v-card-actions>
           </v-form>
         </v-card>
