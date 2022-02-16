@@ -16,20 +16,22 @@ export default {
         <div class="hero-copy">I am a web developer based in Maine. I build great websites.</div>
 
         <router-link :to="{ name: 'Portfolio' }">
-          <v-btn
-            elevation="6"
-            large
-            class="portfolio-button mb-4 font-weight-bold"
-            color="secondary"
-            aria-label="Bradley's Portfolio"
-            title="Bradley's Portfolio"
-          >
-            Portfolio
-          </v-btn>
+          <v-hover v-slot="{ hover }">
+            <v-btn
+              :elevation="hover ? 8 : 4"
+              large
+              class="portfolio-button mb-4 font-weight-bold"
+              color="secondary"
+              aria-label="Bradley's Portfolio"
+              title="Bradley's Portfolio"
+            >
+              Portfolio
+            </v-btn>
+          </v-hover>
         </router-link>
 
         <!--
-           - [> TODO: add link to gihub  <]
+           - [> TODO: add link to gihub??  <]
            - <div>
            -   <a
            -     href="https://github.com/bradleyhop"

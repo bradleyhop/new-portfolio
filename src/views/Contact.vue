@@ -16,7 +16,7 @@ export default {
     <PageHeader headerText="Contact" />
 
     <v-row justify="center">
-      <h1 class="mx-1 text-center"><i>Am I the Team Member You're Looking For?</i></h1>
+      <h2 class="mx-1 text-center white--text">Am I the Team Member You're Looking For?</h2>
     </v-row>
 
     <ContactForm />
