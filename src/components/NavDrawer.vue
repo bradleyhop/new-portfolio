@@ -1,6 +1,12 @@
 <script>
+import menu from "@/assets/data/menu.js";
+
 export default {
   name: "NavDrawer",
+
+  data: () => ({
+    menuItem: menu,
+  }),
 
   props: {
     value: {
@@ -23,48 +29,15 @@ export default {
     hide-overlay
   >
     <div class="nav-container">
-      <div class="nav-list-container">
-        <v-list class="view-list">
-          <router-link :to="{ name: 'Home' }">
+      <div class="nav-list-container view-list">
+        <v-list class="no-padding" v-for="(item, i) in menuItem" :key="i">
+          <router-link :to="item.routerLink">
             <v-list-item link>
               <v-list-item-action>
-                <v-icon color="secondary">mdi-home</v-icon>
+                <v-icon color="secondary">{{ item.icon }}</v-icon>
               </v-list-item-action>
               <v-list-item-content>
-                <v-list-item-title> Home </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </router-link>
-
-          <router-link :to="{ name: 'About' }">
-            <v-list-item link>
-              <v-list-item-action>
-                <v-icon color="secondary">mdi-cards-heart</v-icon>
-              </v-list-item-action>
-              <v-list-item-content>
-                <v-list-item-title> About Me </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </router-link>
-
-          <router-link :to="{ name: 'Portfolio' }">
-            <v-list-item link>
-              <v-list-item-action>
-                <v-icon color="secondary">mdi-code-tags</v-icon>
-              </v-list-item-action>
-              <v-list-item-content>
-                <v-list-item-title> Portfolio </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </router-link>
-
-          <router-link :to="{ name: 'Contact' }">
-            <v-list-item link>
-              <v-list-item-action>
-                <v-icon color="secondary">mdi-email</v-icon>
-              </v-list-item-action>
-              <v-list-item-content>
-                <v-list-item-title> Contact </v-list-item-title>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </router-link>
@@ -94,6 +67,10 @@ export default {
 
 .view-list {
   margin-top: 2rem;
+}
+
+.no-padding {
+  padding: 0;
 }
 
 .nav-img {

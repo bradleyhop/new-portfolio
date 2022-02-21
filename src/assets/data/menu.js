@@ -1,22 +1,22 @@
 const menu = [
   {
     title: "Home",
-    routerLink: "{ name: 'Home' }",
+    routerLink: { name: "Home" },
     icon: "mdi-home",
   },
   {
     title: "About",
-    routerLink: "{ name: 'About' }",
+    routerLink: { name: "About" },
     icon: "mdi-cards-heart",
   },
   {
     title: "Portfolio",
-    routerLink: "{ name: 'Portfolio' }",
+    routerLink: { name: "Portfolio" },
     icon: "mdi-code-tags",
   },
   {
     title: "Contact",
-    routerLink: "{ name: 'Contact' }",
+    routerLink: { name: "Contact" },
     icon: "mdi-email",
   },
 ];
