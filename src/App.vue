@@ -1,9 +1,11 @@
 <script>
 import NavDrawer from "@/components/NavDrawer.vue";
+import NavBar from "@/components/NavBar.vue";
 
 export default {
   components: {
     NavDrawer,
+    NavBar,
   },
 
   data: () => ({
@@ -17,8 +19,16 @@ export default {
     <v-app-bar app dense elevate-on-scroll color="primary">
       <v-spacer></v-spacer>
 
-      <!-- TODO: have a menu list in the toolbar, and only show the drawer on mobile -->
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="white" aria-label="menu">
+      <!-- hide menu bar on mobile -->
+      <NavBar v-show="!$vuetify.breakpoint.mobile" />
+
+      <!-- hide menu icon not on mobile; send click state to NavDrawer to show drawer -->
+      <v-app-bar-nav-icon
+        @click.stop="drawer = !drawer"
+        color="white"
+        aria-label="menu"
+        v-show="$vuetify.breakpoint.mobile"
+      >
       </v-app-bar-nav-icon>
 
       <NavDrawer v-model="drawer" />
