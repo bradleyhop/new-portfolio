@@ -10,8 +10,8 @@ export default {
 
   props: {
     value: {
-      default: false,
       type: Boolean,
+      default: () => false,
     },
   },
 };

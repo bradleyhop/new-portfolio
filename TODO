@@ -1,2 +1,1 @@
-Show menu toolbar on larger screens, menu bar on smaller devices
-Button elevations?
+Load menu components dynamically instead of just hiding them with v-show
