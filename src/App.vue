@@ -21,7 +21,7 @@ export default {
 <template>
   <v-app id="inspire">
     <v-app-bar app dense elevate-on-scroll color="primary">
-      <v-spacer></v-spacer>
+      <v-spacer />
 
       <!-- menu bar or navigation drawer based on mobile breakpoint -->
       <component :is="userMenu" v-model="drawer" />
@@ -32,8 +32,7 @@ export default {
         color="white"
         aria-label="menu"
         v-if="$vuetify.breakpoint.mobile"
-      >
-      </v-app-bar-nav-icon>
+      />
     </v-app-bar>
 
     <!-- page contents plug in here -->
@@ -42,7 +41,7 @@ export default {
     </v-main>
 
     <v-footer color="primary">
-      <v-spacer></v-spacer>
+      <v-spacer />
 
       <a href="https://github.com/bradleyhop" rel="noreferrer noopener" target="_blank">
         <v-hover v-slot="{ hover }">

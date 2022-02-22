@@ -45,35 +45,17 @@ export default {
       </div>
       <!-- nav-list-container -->
 
-      <!-- brand image of myself pushed to the bottom of the slide-out menu -->
-      <div class="nav-img">
-        <v-img src="@/assets/og.jpg" contain> </v-img>
-      </div>
     </div>
     <!-- nav-container -->
   </v-navigation-drawer>
 </template>
 
 <style lang="scss" scoped>
-.nav-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.nav-list-container {
-  flex: 1 0 auto;
-}
-
 .view-list {
   margin-top: 2rem;
 }
 
 .no-padding {
   padding: 0;
-}
-
-.nav-img {
-  flex-shrink: 0;
 }
 </style>

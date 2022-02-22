@@ -29,7 +29,7 @@ export default {
 
 <template>
   <v-card class="port-card-container">
-    <v-img class="card-img" :src="imgSrc" :alt="imgAlt" :aspect-ratio="16 / 9"> </v-img>
+    <v-img class="card-img" :src="imgSrc" :alt="imgAlt" :aspect-ratio="16 / 9" />
     <v-card-title>{{ cardTitle }}</v-card-title>
     <v-card-subtitle>
       <a :href="liveLink" target="_blank" rel="noopener noreferrer" title="live demo">
