@@ -15,37 +15,29 @@ export default {
         <div class="my-name header-text">Bradley Smith</div>
         <div class="hero-copy">I am a web developer based in Maine. I build great websites.</div>
 
-        <router-link :to="{ name: 'Portfolio' }">
-          <v-hover v-slot="{ hover }">
-            <v-btn
-              :elevation="hover ? 8 : 4"
-              large
-              class="portfolio-button mb-4 font-weight-bold"
-              color="secondary"
-              aria-label="Bradley's Portfolio"
-              title="Bradley's Portfolio"
-            >
-              Portfolio
-            </v-btn>
-          </v-hover>
-        </router-link>
+        <div class="container">
+          <router-link :to="{ name: 'Portfolio' }">
+            <v-hover v-slot="{ hover }">
+              <v-btn
+                :elevation="hover ? 6 : 2"
+                large
+                class="portfolio-button mb-4 font-weight-bold"
+                color="secondary"
+                aria-label="Bradley's Portfolio"
+                title="Bradley's Portfolio"
+              >
+                Portfolio
+              </v-btn>
+            </v-hover>
+          </router-link>
 
-        <!--
-           - [> TODO: add link to gihub??  <]
-           - <div>
-           -   <a
-           -     href="https://github.com/bradleyhop"
-           -     target="_blank"
-           -     title="Bradley's GitHub Profile"
-           -     rel="noopener noreferrer"
-           -     aria-label="Bradley's GitHub profile"
-           -     >
-           -     <v-btn large color="#f5f5f5" class="mb-4">
-           -       <span class="fab fa-github icon-contact"></span>
-           -       GitHub
-           -     </v-btn>
-           -   </a>
-           - </div> -->
+          <v-img
+            contain
+            class="brand-me rounded-lg elevation-8"
+            max-width="18rem"
+            src="@/assets/og.jpg"
+          />
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -91,6 +83,19 @@ export default {
 
   @media only screen and (min-width: 800px) {
     font-size: 1.5rem;
+  }
+}
+
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.brand-me {
+  margin-left: 0;
+
+  @media only screen and (min-width: 800px) {
+    margin-left: 14rem;
   }
 }
 </style>

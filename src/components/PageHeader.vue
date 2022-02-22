@@ -15,8 +15,8 @@ export default {
   <v-row>
     <v-col align="center">
       <h1>{{ headerText }}</h1>
-      <hr class="header-break" />
-      <hr class="second-header-break" />
+      <div class="header-break" />
+      <div class="second-header-break" />
     </v-col>
   </v-row>
 </template>
@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 .header-break {
   background-color: #424242;
-  border-width: 0;
+  border-radius: 5px;
   color: #424242;
   height: 2px;
   margin-bottom: 0.5rem;

@@ -50,7 +50,7 @@ export default {
         </p>
       </v-col>
 
-      <v-divider vertical></v-divider>
+      <v-divider vertical />
 
       <v-col cols="12" md="4" align-self="center">
         <div class="list-group me-copy">
