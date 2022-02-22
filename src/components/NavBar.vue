@@ -13,22 +13,20 @@ export default {
 <template>
   <div>
     <v-list class="menu-item" v-for="(item, i) in menuItem" :key="i">
-      <router-link :to="item.routerLink">
+      <router-link class="item-hover" :to="item.routerLink">
         <!-- change background and text color on hover -->
-        <v-hover v-slot:default="{ hover }">
-          <v-list-item class="item-hover">
-            <v-list-item-action>
-              <v-icon color="secondary">
-                {{ item.icon }}
-              </v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title :class="hover ? 'black--text' : 'white--text'">
-                {{ item.title }}
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-hover>
+        <v-list-item>
+          <v-list-item-action>
+            <v-icon color="secondary">
+              {{ item.icon }}
+            </v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title class="white--text">
+              {{ item.title }}
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </router-link>
     </v-list>
   </div>
@@ -36,15 +34,20 @@ export default {
 
 <style lang="scss" scoped>
 .menu-item {
-  display: inline-block;
-}
-
-.menu-item {
-  padding: 0;
+  display: inline-flex;
   background: none;
 }
 
-.item-hover:hover {
-  background-color: #f5f5f5;
+.item-hover::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #f5f5f5;
+  // transition: width 0.3s;
+}
+
+.item-hover:hover::after {
+  width: 100%;
 }
 </style>
