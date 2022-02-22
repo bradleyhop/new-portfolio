@@ -1,16 +1,20 @@
 <script>
-import NavDrawer from "@/components/NavDrawer.vue";
-import NavBar from "@/components/NavBar.vue";
+// dynamically load in components as needed
+const NavDrawer = () => import("@/components/NavDrawer.vue");
+const NavBar = () => import("@/components/NavBar.vue");
 
 export default {
-  components: {
-    NavDrawer,
-    NavBar,
-  },
-
   data: () => ({
     drawer: false, // menu drawer is closed on page load
   }),
+
+  computed: {
+    userMenu() {
+      // mobile first ;)
+      if (this.$vuetify.breakpoint.mobile) return NavDrawer;
+      else return NavBar;
+    },
+  },
 };
 </script>
 
@@ -19,19 +23,17 @@ export default {
     <v-app-bar app dense elevate-on-scroll color="primary">
       <v-spacer></v-spacer>
 
-      <!-- hide menu bar on mobile -->
-      <NavBar v-show="!$vuetify.breakpoint.mobile" />
+      <!-- menu bar or navigation drawer based on mobile breakpoint -->
+      <component :is="userMenu" v-model="drawer" />
 
       <!-- hide menu icon not on mobile; send click state to NavDrawer to show drawer -->
       <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
         color="white"
         aria-label="menu"
-        v-show="$vuetify.breakpoint.mobile"
+        v-if="$vuetify.breakpoint.mobile"
       >
       </v-app-bar-nav-icon>
-
-      <NavDrawer v-model="drawer" />
     </v-app-bar>
 
     <!-- page contents plug in here -->
