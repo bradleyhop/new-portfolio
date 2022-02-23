@@ -31,7 +31,7 @@ export default {
           aria-label="Bradley's GitHub profile"
         >
           <v-btn large color="#f5f5f5" class="mb-4" elevation="6">
-            <span class="fab fa-github icon-contact"></span>
+            <v-icon>mdi-github</v-icon>
             GitHub
           </v-btn>
         </a>
@@ -44,7 +44,7 @@ export default {
           aria-label="Bradley's LinkedIn profile"
         >
           <v-btn large color="#0077b5" class="white--text mb-4" elevation="6">
-            <span class="fab fa-linkedin-in icon-contact"></span>
+            <v-icon>mdi-linkedin</v-icon>
             LinkedIn
           </v-btn>
         </a>
@@ -57,7 +57,11 @@ export default {
           aria-label="Bradley's free code camp profile"
         >
           <v-btn large color="#006400" class="white--text mb-4" elevation="6">
-            <span class="fab fa-free-code-camp icon-contact"></span>
+            <!-- more home-made freeCodeCamp icon magic  -->
+            &nbsp;<span class="par-size">&lpar;</span>
+            <v-icon class="fcc-icon">mdi-fire</v-icon>
+            <span class="par-size">&rpar;</span>
+            <span class="fcc-margin"></span>
             FreeCodeCamp
           </v-btn>
         </a>
@@ -75,5 +79,15 @@ export default {
   font-size: 1.5em;
   margin-right: 0.5rem;
   vertical-align: middle;
+}
+
+.par-size {
+  font-size: 1.25rem;
+}
+
+.fcc-icon {
+  transform: scaleX(-1);
+  margin-left: -4px;
+  margin-right: -4px;
 }
 </style>
