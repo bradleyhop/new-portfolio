@@ -34,7 +34,8 @@ export default {
           <v-img
             contain
             class="brand-me rounded-lg elevation-8"
-            max-width="18rem"
+            max-width="16rem"
+            :aspect-ratio="16 / 9"
             src="@/assets/og.jpg"
           />
         </div>
@@ -87,15 +88,19 @@ export default {
 }
 
 .container {
-  display: inline-flex;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 800px) {
+    flex-direction: row;
+  }
 }
 
 .brand-me {
   margin-left: 0;
 
   @media only screen and (min-width: 800px) {
-    margin-left: 14rem;
+    margin-left: 15rem;
   }
 }
 </style>

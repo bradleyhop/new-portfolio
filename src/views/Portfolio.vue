@@ -77,7 +77,10 @@ export default {
         <a href="https://freecodecamp.org" target="_blank" rel="norefferer noopener">
           <h3 class="fcc-color">
             freeCodeCamp
-            <i class="fab fa-free-code-camp fcc-icon"></i>
+            <!-- home-made freeCodeCamp icon using material icon fire and some css trickery -->
+            &nbsp;&lpar;
+            <v-icon class="fcc-icon">mdi-fire</v-icon>
+            &rpar;
           </h3>
         </a>
         <p class="heading-copy">
@@ -114,7 +117,11 @@ export default {
 }
 
 .fcc-icon {
-  font-size: 1.25em;
+  color: #00641f;
+  transform: scaleX(-1);
+  vertical-align: text-bottom;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .heading-copy {
