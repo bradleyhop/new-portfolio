@@ -1,16 +1,21 @@
-import Vue from 'vue';
-import Vuetify from 'vuetify/lib';
+// load in material icons for production preformance
+import "@mdi/font/css/materialdesignicons.css";
+// in in free fontawesome5
+import "@fortawesome/fontawesome-free/css/all.css";
+// load vue and vuetify
+import Vue from "vue";
+import Vuetify from "vuetify/lib";
 
 const vuetify = new Vuetify({
   theme: {
     themes: {
       light: {
-        primary: '#424242',
-        primaryLight: '#fafafa',
-        primaryDark: '#373737',
-        secondary: '#f47b00',
-        secondaryLight: '#ffac42',
-        secondaryDark: '#ba4c00',
+        primary: "#424242",
+        primaryLight: "#fafafa",
+        primaryDark: "#373737",
+        secondary: "#f47b00",
+        secondaryLight: "#ffac42",
+        secondaryDark: "#ba4c00",
       },
     },
   },
