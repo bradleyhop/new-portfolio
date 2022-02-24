@@ -1,6 +1,10 @@
 <script>
 import PageHeader from "@/components/PageHeader.vue";
 import ContactForm from "@/components/ContactForm.vue";
+// load icons
+import { mdiGithub } from "@mdi/js";
+import { mdiLinkedin } from "@mdi/js";
+import { mdiFire } from "@mdi/js";
 
 export default {
   name: "Contact",
@@ -8,6 +12,13 @@ export default {
     PageHeader,
     ContactForm,
   },
+
+  data: () => ({
+    // mdi icons
+    mdiGithub,
+    mdiLinkedin,
+    mdiFire,
+  }),
 };
 </script>
 
@@ -31,7 +42,7 @@ export default {
           aria-label="Bradley's GitHub profile"
         >
           <v-btn large color="#f5f5f5" class="mb-4" elevation="6">
-            <v-icon>mdi-github</v-icon>
+            <v-icon>{{ mdiGithub }}</v-icon>
             GitHub
           </v-btn>
         </a>
@@ -44,7 +55,7 @@ export default {
           aria-label="Bradley's LinkedIn profile"
         >
           <v-btn large color="#0077b5" class="white--text mb-4" elevation="6">
-            <v-icon>mdi-linkedin</v-icon>
+            <v-icon>{{ mdiLinkedin }}</v-icon>
             LinkedIn
           </v-btn>
         </a>
@@ -59,7 +70,7 @@ export default {
           <v-btn large color="#006400" class="white--text mb-4" elevation="6">
             <!-- more home-made freeCodeCamp icon magic  -->
             &nbsp;<span class="par-size">&lpar;</span>
-            <v-icon class="fcc-icon">mdi-fire</v-icon>
+            <v-icon class="fcc-icon">{{ mdiFire }}</v-icon>
             <span class="par-size">&rpar;</span>
             <span class="fcc-margin"></span>
             FreeCodeCamp

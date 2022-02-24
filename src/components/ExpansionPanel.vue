@@ -1,9 +1,16 @@
 <script>
+// load icons
+import { mdiOpenInNew } from "@mdi/js";
+import { mdiGithub } from "@mdi/js";
+
 export default {
   name: "ExpansionPanel",
 
   data: () => ({
     overlay: false, // state of hover for image overlay for project links
+    // mdi icons
+    mdiOpenInNew,
+    mdiGithub,
   }),
 
   props: {
@@ -61,7 +68,7 @@ export default {
                           rel="noopener noreferrer"
                           title="live demo"
                         >
-                          <v-icon size="5em" class="icon-link"> mdi-open-in-new </v-icon>
+                        <v-icon size="5em" class="icon-link">{{ mdiOpenInNew }}</v-icon>
                         </a>
 
                         <a
@@ -71,7 +78,7 @@ export default {
                           rel="noopener noreferrer"
                           title="source code"
                         >
-                          <v-icon size="5em" class="icon-link"> mdi-github </v-icon>
+                        <v-icon size="5em" class="icon-link">{{ mdiGithub }}</v-icon>
                         </a>
                       </v-overlay>
                     </v-fade-transition>

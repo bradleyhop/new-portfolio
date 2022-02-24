@@ -1,9 +1,12 @@
 <script>
-import ExpansionPanel from "@/components/ExpansionPanel.vue";
-import PortCard from "@/components/PortCard.vue";
 import PageHeader from "@/components/PageHeader.vue";
+import PortCard from "@/components/PortCard.vue";
+import ExpansionPanel from "@/components/ExpansionPanel.vue";
+// arrays holding project info
 import fCC from "@/assets/data/fcc-data.js";
 import extra from "@/assets/data/extra-data.js";
+// load only the icons we need!
+import { mdiFire } from "@mdi/js";
 
 export default {
   name: "Portfolio",
@@ -16,6 +19,8 @@ export default {
   data: () => ({
     freecodecampData: fCC, // freecodecamp project data
     extraData: extra, // extracurricular data
+    // mdi icons
+    mdiFire,
   }),
 };
 </script>
@@ -79,7 +84,7 @@ export default {
             freeCodeCamp
             <!-- home-made freeCodeCamp icon using material icon fire and some css trickery -->
             &nbsp;&lpar;
-            <v-icon class="fcc-icon">mdi-fire</v-icon>
+            <v-icon class="fcc-icon">{{ mdiFire }}</v-icon>
             &rpar;
           </h3>
         </a>

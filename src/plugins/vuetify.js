@@ -1,6 +1,3 @@
-// load in material icons for production preformance
-import "@mdi/font/css/materialdesignicons.css";
-// load vue and vuetify
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 
@@ -21,8 +18,9 @@ const vuetify = new Vuetify({
 
 Vue.use(Vuetify, vuetify);
 
+// to use @mdi/js fonts within Vuetify's builtin framework
 export default new Vuetify({
   icons: {
-    iconfont: 'mdi',
+    iconfont: 'mdiSvg',
   },
 });

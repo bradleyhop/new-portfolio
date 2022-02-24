@@ -1,6 +1,16 @@
 <script>
+// load icons
+import { mdiOpenInNew } from "@mdi/js";
+import { mdiGithub } from "@mdi/js";
+
 export default {
   name: "PortCard",
+
+  data: () => ({
+    // mdi icons
+    mdiOpenInNew,
+    mdiGithub,
+  }),
 
   props: {
     cardTitle: {
@@ -33,11 +43,11 @@ export default {
     <v-card-title>{{ cardTitle }}</v-card-title>
     <v-card-subtitle>
       <a :href="liveLink" target="_blank" rel="noopener noreferrer" title="live demo">
-        <v-icon size="2.5rem" class="icon-link card-link"> mdi-open-in-new </v-icon>
+        <v-icon size="2.5rem" class="icon-link card-link">{{ mdiOpenInNew }}</v-icon>
       </a>
 
       <a :href="gitLink" target="_blank" rel="noopener noreferrer" title="source code">
-        <v-icon size="2.5rem" class="icon-link card-link"> mdi-github </v-icon>
+        <v-icon size="2.5rem" class="icon-link card-link">{{ mdiGithub }}</v-icon>
       </a>
     </v-card-subtitle>
   </v-card>
