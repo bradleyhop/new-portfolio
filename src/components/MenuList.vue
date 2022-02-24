@@ -18,15 +18,15 @@ export default {
   props: {
     underlineHover: {
       type: Boolean,
-      default: () => false,
+      default: false,
     },
     whiteText: {
       type: Boolean,
-      default: () => false,
+      default: false,
     },
     drawerLink: {
       type: Boolean,
-      default: () => false,
+      default: false,
     },
   },
 };

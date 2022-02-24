@@ -5,7 +5,7 @@ export default {
   props: {
     headerText: {
       type: String,
-      default: () => "",
+      default: "",
     },
   },
 };
