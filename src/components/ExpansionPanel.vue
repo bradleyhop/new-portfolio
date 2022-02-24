@@ -68,7 +68,7 @@ export default {
                           rel="noopener noreferrer"
                           title="live demo"
                         >
-                        <v-icon size="5em" class="icon-link">{{ mdiOpenInNew }}</v-icon>
+                        <v-icon size="5rem" class="icon-link">{{ mdiOpenInNew }}</v-icon>
                         </a>
 
                         <a
@@ -78,7 +78,7 @@ export default {
                           rel="noopener noreferrer"
                           title="source code"
                         >
-                        <v-icon size="5em" class="icon-link">{{ mdiGithub }}</v-icon>
+                        <v-icon size="5rem" class="icon-link">{{ mdiGithub }}</v-icon>
                         </a>
                       </v-overlay>
                     </v-fade-transition>

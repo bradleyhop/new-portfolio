@@ -15,15 +15,15 @@ export default {
   props: {
     cardTitle: {
       type: String,
-      default: () => "",
+      default: "",
     },
     liveLink: {
       type: String,
-      default: () => "",
+      default: "",
     },
     gitLink: {
       type: String,
-      default: () => "",
+      default: "",
     },
     imgSrc: {
       type: Object,
@@ -31,7 +31,7 @@ export default {
     },
     imgAlt: {
       type: String,
-      default: () => "",
+      default: "",
     },
   },
 };
