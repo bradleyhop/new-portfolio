@@ -1,11 +1,18 @@
 <script>
-import menu from "@/assets/data/menu.js";
+import MenuList from "@/components/MenuList.vue";
+// load mdi icons
+import { mdiHome } from "@mdi/js";
 
 export default {
   name: "NavDrawer",
 
+  components: {
+    MenuList,
+  },
+
   data: () => ({
-    menuItem: menu,
+    // mdi icons
+    mdiHome,
   }),
 
   props: {
@@ -20,7 +27,7 @@ export default {
 <template>
   <!-- hide-overlay because its obstucting navigation somehow -->
   <v-navigation-drawer
-    v-bind:value="value"
+    :value="value"
     v-on:input="$emit('input', $event)"
     app
     right
@@ -30,23 +37,11 @@ export default {
   >
     <div class="nav-container">
       <div class="nav-list-container view-list">
-        <v-list class="no-padding" v-for="(item, i) in menuItem" :key="i">
-          <router-link :to="item.routerLink">
-            <v-list-item link>
-              <v-list-item-action>
-                <v-icon color="secondary">{{ item.icon }}</v-icon>
-              </v-list-item-action>
-              <v-list-item-content>
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </router-link>
+        <v-list class="no-padding">
+          <MenuList :drawerLink="true" />
         </v-list>
       </div>
-      <!-- nav-list-container -->
-
     </div>
-    <!-- nav-container -->
   </v-navigation-drawer>
 </template>
 
