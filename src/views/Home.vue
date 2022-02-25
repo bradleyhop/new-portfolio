@@ -13,7 +13,7 @@ export default {
           <br />
         </div>
         <div class="my-name header-text">Bradley Smith</div>
-        <div class="hero-copy">I am a web developer based in Maine. I build great websites.</div>
+        <div class="hero-copy">I am a web developer based in Maine.<br /> I build great websites.</div>
 
         <div class="bottom-container">
           <router-link :to="{ name: 'Portfolio' }">
