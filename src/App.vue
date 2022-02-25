@@ -26,7 +26,7 @@ export default {
       <!-- menu bar or navigation drawer based on mobile breakpoint -->
       <component :is="userMenu" v-model="drawer" />
 
-      <!-- hide menu icon not on mobile; send click state to NavDrawer to show drawer -->
+      <!-- hide menu icon if not on mobile; send click state to NavDrawer to show drawer -->
       <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
         color="white"

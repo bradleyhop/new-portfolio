@@ -18,7 +18,7 @@ const vuetify = new Vuetify({
 
 Vue.use(Vuetify, vuetify);
 
-// to use @mdi/js fonts within Vuetify's builtin framework
+// to use @mdi/js fonts within Vuetify's builtin framework; will only build in used icons
 export default new Vuetify({
   icons: {
     iconfont: 'mdiSvg',

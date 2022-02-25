@@ -19,7 +19,7 @@ export default {
           <router-link :to="{ name: 'Portfolio' }">
             <v-hover v-slot="{ hover }">
               <v-btn
-                :elevation="hover ? 6 : 2"
+                :elevation="hover ? 4 : 2"
                 large
                 class="portfolio-button mb-4 font-weight-bold"
                 color="secondary"
