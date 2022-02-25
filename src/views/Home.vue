@@ -15,13 +15,13 @@ export default {
         <div class="my-name header-text">Bradley Smith</div>
         <div class="hero-copy">I am a web developer based in Maine. I build great websites.</div>
 
-        <div class="container">
+        <div class="bottom-container">
           <router-link :to="{ name: 'Portfolio' }">
             <v-hover v-slot="{ hover }">
               <v-btn
                 :elevation="hover ? 4 : 2"
                 large
-                class="portfolio-button mb-4 font-weight-bold"
+                class="mb-4 black--text"
                 color="secondary"
                 aria-label="Bradley's Portfolio"
                 title="Bradley's Portfolio"
@@ -80,14 +80,14 @@ export default {
   font-family: $Poppins;
   font-display: swap;
   font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 
   @media only screen and (min-width: 800px) {
     font-size: 1.5rem;
   }
 }
 
-.container {
+.bottom-container {
   display: flex;
   flex-direction: column;
 
