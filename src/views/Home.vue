@@ -33,7 +33,7 @@ export default {
 
           <v-img
             contain
-            class="brand-me rounded-lg elevation-8"
+            class="brand-me rounded elevation-4"
             max-width="16rem"
             :aspect-ratio="16 / 9"
             src="@/assets/og.jpg"
@@ -100,7 +100,7 @@ export default {
   margin-left: 0;
 
   @media only screen and (min-width: 800px) {
-    margin-left: 15rem;
+    margin-left: 16rem;
   }
 }
 </style>
