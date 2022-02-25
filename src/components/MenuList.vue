@@ -35,7 +35,7 @@ export default {
 <template>
   <div>
     <router-link :class="underlineHover ? 'item-hover' : ''" :to="{ name: 'Home' }">
-      <v-list-item :link="drawerLink ? 'link' : ''">
+      <v-list-item :link="drawerLink">
         <v-list-item-action>
           <v-icon color="secondary">
             {{ mdiHome }}
@@ -49,7 +49,7 @@ export default {
     </router-link>
 
     <router-link :class="underlineHover ? 'item-hover' : ''" :to="{ name: 'About' }">
-      <v-list-item :link="drawerLink ? 'link' : ''">
+      <v-list-item :link="drawerLink">
         <v-list-item-action>
           <v-icon color="secondary">
             {{ mdiCardsHeart }}
@@ -62,7 +62,7 @@ export default {
     </router-link>
 
     <router-link :class="underlineHover ? 'item-hover' : ''" :to="{ name: 'Portfolio' }">
-      <v-list-item :link="drawerLink ? 'link' : ''">
+      <v-list-item :link="drawerLink">
         <v-list-item-action>
           <v-icon color="secondary">
             {{ mdiCodeTags }}
@@ -75,7 +75,7 @@ export default {
     </router-link>
 
     <router-link :class="underlineHover ? 'item-hover' : ''" :to="{ name: 'Contact' }">
-      <v-list-item :link="drawerLink ? 'link' : ''">
+      <v-list-item :link="drawerLink">
         <v-list-item-action>
           <v-icon color="secondary">
             {{ mdiEmail }}
