@@ -1,4 +1,8 @@
 <script>
+// mdi icons used in snackbars
+import { mdiCheckboxMarkedCircle } from "@mdi/js";
+import { mdiAlertCircleOutline } from "@mdi/js";
+
 export default {
   name: "ContactForm",
 
@@ -30,6 +34,9 @@ export default {
       colorSnackbar: "",
       iconSnackbar: "",
       timeout: 2500, // timeout for snackbar
+      // mdi icons
+      mdiAlertCircleOutline,
+      mdiCheckboxMarkedCircle,
     };
   },
 
@@ -69,14 +76,14 @@ export default {
           } else {
             this.snackbar = true;
             this.colorSnackbar = "success";
-            this.iconSnackbar = "mdi-checkbox-marked-circle";
+            this.iconSnackbar = mdiCheckboxMarkedCircle;
             this.textSnackbar = "Form submitted! Thank you!! ";
           }
         })
         .catch((error) => {
           this.snackbar = true;
           this.colorSnackbar = "error";
-          this.iconSnackbar = "mdi-alert-circle-outline";
+          this.iconSnackbar = mdiAlertCircleOutline;
           this.textSnackbar = "Error! Form not submitted: ";
           this.textSnackbar += error;
         });
@@ -101,8 +108,8 @@ export default {
             :color="colorSnackbar"
             :timeout="timeout"
           >
-            {{ textSnackbar }}
             <v-icon dark> {{ iconSnackbar }} </v-icon>
+            {{ textSnackbar }}
           </v-snackbar>
 
           <!-- node dummy form in public/index.html so that Netlify can handle this form -->
@@ -151,7 +158,9 @@ export default {
             <v-card-actions>
               <v-btn @click="resetForm" color="secondaryLight" type="reset"> Reset </v-btn>
               <v-spacer></v-spacer>
-              <v-btn :disabled="!formIsValid" color="secondary" type="submit" class="black--text"> Submit </v-btn>
+              <v-btn :disabled="!formIsValid" color="secondary" type="submit" class="black--text">
+                Submit
+              </v-btn>
             </v-card-actions>
           </v-form>
         </v-card>
