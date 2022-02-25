@@ -27,7 +27,7 @@ export default {
     <PageHeader headerText="Contact" />
 
     <v-row justify="center">
-      <h2 class="mx-1 text-center white--text">Am I the Team Member You're Looking For?</h2>
+      <h2 class="mx-1 text-center">Am I the Team Member You're Looking For?</h2>
     </v-row>
 
     <ContactForm />
@@ -69,9 +69,9 @@ export default {
         >
           <v-btn large color="#006400" class="white--text mb-4" elevation="6">
             <!-- more home-made freeCodeCamp icon magic  -->
-            &nbsp;<span class="par-size">&lpar;</span>
+            &nbsp;<span class="paren-size">&lpar;</span>
             <v-icon class="fcc-icon">{{ mdiFire }}</v-icon>
-            <span class="par-size">&rpar;</span>
+            <span class="paren-size">&rpar;</span>
             <span class="fcc-margin"></span>
             FreeCodeCamp
           </v-btn>
@@ -92,7 +92,7 @@ export default {
   vertical-align: middle;
 }
 
-.par-size {
+.paren-size {
   font-size: 1.25rem;
 }
 
