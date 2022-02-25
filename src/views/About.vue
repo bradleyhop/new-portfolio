@@ -64,7 +64,6 @@ export default {
             <li>IDE is Vim (with plugins) within Tmux</li>
           </ul>
         </div>
-        <!-- list-group -->
 
         <div class="list-group me-copy">
           <div class="list-header">I've built projects using:</div>
@@ -78,7 +77,6 @@ export default {
             <li>Currently exploring WordPress plugins and Gutenberg blocks using PHP and Vue.js</li>
           </ul>
         </div>
-        <!-- list-group -->
       </v-col>
     </v-row>
   </v-container>
