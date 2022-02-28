@@ -6,47 +6,59 @@ export default {
 
 <template>
   <v-container fill-height fluid class="home-container">
-    <v-row align="center">
-      <v-col offset-lg="3" lg="6" sm="12">
-        <div class="hero-header header-text">
-          Hello, my name is
-          <br />
-        </div>
-        <div class="my-name header-text">Bradley Smith</div>
-        <div class="hero-copy">I am a web developer based in Maine.<br /> I build great websites.</div>
+    <div class="content-container">
+      <div class="hero-header header-text">
+        Hello, my name is
+        <br />
+      </div>
+      <div class="my-name header-text">Bradley Smith</div>
+      <div class="hero-copy">
+        I am a web developer based in Maine.<br />
+        I build great websites.
+      </div>
 
-        <div class="bottom-container">
-          <router-link :to="{ name: 'Portfolio' }">
-            <v-hover v-slot="{ hover }">
-              <v-btn
-                :elevation="hover ? 4 : 2"
-                large
-                class="mb-4 black--text"
-                color="secondary"
-                aria-label="Bradley's Portfolio"
-                title="Bradley's Portfolio"
-              >
-                Portfolio
-              </v-btn>
-            </v-hover>
-          </router-link>
+      <div class="bottom-container">
+        <router-link :to="{ name: 'Portfolio' }">
+          <v-hover v-slot="{ hover }">
+            <v-btn
+              :elevation="hover ? 4 : 2"
+              large
+              class="mb-4 black--text"
+              color="secondary"
+              aria-label="Bradley's Portfolio"
+              title="Bradley's Portfolio"
+            >
+              Portfolio
+            </v-btn>
+          </v-hover>
+        </router-link>
 
-          <v-img
-            contain
-            class="brand-me rounded elevation-4"
-            max-width="16rem"
-            :aspect-ratio="16 / 9"
-            src="@/assets/og.jpg"
-          />
-        </div>
-      </v-col>
-    </v-row>
+        <v-img
+          contain
+          class="brand-me rounded elevation-4"
+          min-width="12rem"
+          max-width="16rem"
+          :aspect-ratio="16 / 9"
+          src="@/assets/og.jpg"
+        />
+      </div><!-- bottom-container -->
+    </div><!-- content-container -->
   </v-container>
 </template>
 
 <style lang="scss" scoped>
 .home-container {
   background-color: $eggshell;
+}
+
+.content-container {
+  width: 100%;
+  margin: 0;
+
+  @media only screen and (min-width: 800px) {
+    width: 41rem;
+    margin: auto;
+  }
 }
 
 .header-text {
