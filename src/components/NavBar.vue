@@ -12,7 +12,7 @@ export default {
 
 <template>
   <v-list class="menu-background">
-    <MenuList class="display-inline" :underlineHover="true" :whiteText="true" />
+    <MenuList class="display-inline" :whiteText="true" />
   </v-list>
 </template>
 

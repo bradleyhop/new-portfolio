@@ -41,8 +41,10 @@ export default {
           :aspect-ratio="16 / 9"
           src="@/assets/og.jpg"
         />
-      </div><!-- bottom-container -->
-    </div><!-- content-container -->
+      </div>
+      <!-- bottom-container -->
+    </div>
+    <!-- content-container -->
   </v-container>
 </template>
 
