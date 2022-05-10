@@ -54,7 +54,9 @@ export default {
                 <template v-slot:default="{ hover }">
                   <v-img
                     v-if="projectItem.img.src"
-                    :src="require(`@/assets/screenshots/${projectItem.img.src}?vuetify-preload`)"
+                    :src="
+                      require(`@/assets/screenshots/${projectItem.img.src}?vuetify-preload`)
+                    "
                     :alt="projectItem.img.alt"
                     :aspect-ratio="16 / 9"
                     class="mx-auto"
@@ -68,7 +70,9 @@ export default {
                           rel="noopener noreferrer"
                           title="live demo"
                         >
-                        <v-icon size="5rem" class="icon-link">{{ mdiOpenInNew }}</v-icon>
+                          <v-icon size="5rem" class="icon-link">{{
+                            mdiOpenInNew
+                          }}</v-icon>
                         </a>
 
                         <a
@@ -78,7 +82,9 @@ export default {
                           rel="noopener noreferrer"
                           title="source code"
                         >
-                        <v-icon size="5rem" class="icon-link">{{ mdiGithub }}</v-icon>
+                          <v-icon size="5rem" class="icon-link">{{
+                            mdiGithub
+                          }}</v-icon>
                         </a>
                       </v-overlay>
                     </v-fade-transition>

@@ -55,7 +55,9 @@ export default {
     // encode form data into uri
     encode(data) {
       return Object.keys(data)
-        .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
         .join("&");
     },
 
@@ -114,7 +116,12 @@ export default {
 
           <!-- node dummy form in public/index.html so that Netlify can handle this form -->
           <!-- using zapier.com to handle form submission trigger to send form data to my gmail -->
-          <v-form ref="form" @submit.prevent="submit" name="contact-me" method="post">
+          <v-form
+            ref="form"
+            @submit.prevent="submit"
+            name="contact-me"
+            method="post"
+          >
             <v-container>
               <v-row>
                 <v-col cols="12" sm="6">
@@ -156,9 +163,16 @@ export default {
             </v-container>
 
             <v-card-actions>
-              <v-btn @click="resetForm" color="secondaryLight" type="reset"> Reset </v-btn>
+              <v-btn @click="resetForm" color="secondaryLight" type="reset">
+                Reset
+              </v-btn>
               <v-spacer></v-spacer>
-              <v-btn :disabled="!formIsValid" color="secondary" type="submit" class="black--text">
+              <v-btn
+                :disabled="!formIsValid"
+                color="secondary"
+                type="submit"
+                class="black--text"
+              >
                 Submit
               </v-btn>
             </v-card-actions>

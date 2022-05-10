@@ -39,15 +39,34 @@ export default {
 
 <template>
   <v-card class="port-card-container">
-    <v-img class="card-img" :src="imgSrc" :alt="imgAlt" :aspect-ratio="16 / 9" />
+    <v-img
+      class="card-img"
+      :src="imgSrc"
+      :alt="imgAlt"
+      :aspect-ratio="16 / 9"
+    />
     <v-card-title>{{ cardTitle }}</v-card-title>
     <v-card-subtitle>
-      <a :href="liveLink" target="_blank" rel="noopener noreferrer" title="live demo">
-        <v-icon size="2.5rem" class="icon-link card-link">{{ mdiOpenInNew }}</v-icon>
+      <a
+        :href="liveLink"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="live demo"
+      >
+        <v-icon size="2.5rem" class="icon-link card-link">{{
+          mdiOpenInNew
+        }}</v-icon>
       </a>
 
-      <a :href="gitLink" target="_blank" rel="noopener noreferrer" title="source code">
-        <v-icon size="2.5rem" class="icon-link card-link">{{ mdiGithub }}</v-icon>
+      <a
+        :href="gitLink"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="source code"
+      >
+        <v-icon size="2.5rem" class="icon-link card-link">{{
+          mdiGithub
+        }}</v-icon>
       </a>
     </v-card-subtitle>
   </v-card>

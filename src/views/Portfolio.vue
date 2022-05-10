@@ -79,7 +79,11 @@ export default {
 
     <v-row>
       <v-col cols="12" md="6" offset-md="3">
-        <a href="https://freecodecamp.org" target="_blank" rel="norefferer noopener">
+        <a
+          href="https://freecodecamp.org"
+          target="_blank"
+          rel="norefferer noopener"
+        >
           <h3 class="fcc-color">
             freeCodeCamp
             <!-- home-made freeCodeCamp icon using material icon fire and some css trickery -->
@@ -89,25 +93,29 @@ export default {
           </h3>
         </a>
         <p class="heading-copy">
-          I use freeCodeCamp as my primary source of learning and project building. Courses are
-          designed to be taken in order starting with basic html and css, to learning frontend and
-          backend frameworks with javascript.
+          I use freeCodeCamp as my primary source of learning and project
+          building. Courses are designed to be taken in order starting with
+          basic html and css, to learning frontend and backend frameworks with
+          javascript.
         </p>
         <p class="heading-copy">
-          Each project has a series of user stories checked by a unit testing tool provided by
-          freeCodeCamp. The green hamburger-icon in the top left drops down to show a list of
-          projects. Be sure to select the correct project from the drop-down menu, select "Run
-          Tests", and then click the button below to show the results. Note: Vue is not officially
-          supported by these unit tests, but I was able to get nearly all projects to pass.
+          Each project has a series of user stories checked by a unit testing
+          tool provided by freeCodeCamp. The green hamburger-icon in the top
+          left drops down to show a list of projects. Be sure to select the
+          correct project from the drop-down menu, select "Run Tests", and then
+          click the button below to show the results. Note: Vue is not
+          officially supported by these unit tests, but I was able to get nearly
+          all projects to pass.
         </p>
 
         <ExpansionPanel :projectData="freecodecampData" class="expan-panel" />
 
         <h3>Extracurricular</h3>
         <p class="heading-copy">
-          In addition to freeCodeCamp, I use other resources to increase my knowledge and practice
-          my skills. Here are various algorithm exercises, classes, and projects not part of the
-          freeCodeCamp curriculum.
+          In addition to freeCodeCamp, I use other resources to increase my
+          knowledge and practice my skills. Here are various algorithm
+          exercises, classes, and projects not part of the freeCodeCamp
+          curriculum.
         </p>
 
         <ExpansionPanel :projectData="extraData" class="expan-panel" />

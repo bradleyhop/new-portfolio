@@ -30,23 +30,26 @@ export default {
 
       <v-col cols="12" md="5" align-self="center">
         <p class="me-copy">
-          I am genuinely curious and am always looking for new challenges. I love developing new
-          skills and discovering technologies to produce easy both to use and maintain websites and
-          applications. As a recent transplant from Chicago to the countryside in Maine, I am
-          looking for a remote position.
+          I am genuinely curious and am always looking for new challenges. I
+          love developing new skills and discovering technologies to produce
+          easy both to use and maintain websites and applications. As a recent
+          transplant from Chicago to the countryside in Maine, I am looking for
+          a remote position.
         </p>
 
         <p class="me-copy">
-          I look forward to transferring the soft skills I have acquired in the service industry and
-          as a dance instructor and performer: strong communication skills especially in
-          instructions and empathy; collaboration with other creators; ability to prioritize tasks
-          in real-time to swiftly and efficiently complete tasks on time. I enjoy helping others and
-          problem solving.
+          I look forward to transferring the soft skills I have acquired in the
+          service industry and as a dance instructor and performer: strong
+          communication skills especially in instructions and empathy;
+          collaboration with other creators; ability to prioritize tasks in
+          real-time to swiftly and efficiently complete tasks on time. I enjoy
+          helping others and problem solving.
         </p>
 
         <p class="me-copy">
-          Away from the screen, I enjoy dancing and teaching the Lindy Hop and other vintage jazz
-          dances, restoring and modding vintage video game systems, hiking and kayaking.
+          Away from the screen, I enjoy dancing and teaching the Lindy Hop and
+          other vintage jazz dances, restoring and modding vintage video game
+          systems, hiking and kayaking.
         </p>
       </v-col>
 
@@ -71,10 +74,13 @@ export default {
             <li>JQuery</li>
             <li>Bootstrap</li>
             <li>
-              Various javascript libraries including D3.js, ProgressBar.js, math.js, and S3 and SQS
-              Amazon Web Services
+              Various javascript libraries including D3.js, ProgressBar.js,
+              math.js, and S3 and SQS Amazon Web Services
             </li>
-            <li>Currently exploring WordPress plugins and Gutenberg blocks using PHP and Vue.js</li>
+            <li>
+              Currently exploring WordPress plugins and Gutenberg blocks using
+              PHP and Vue.js
+            </li>
           </ul>
         </div>
       </v-col>

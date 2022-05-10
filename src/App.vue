@@ -43,11 +43,17 @@ export default {
     <v-footer color="primary">
       <v-spacer />
 
-      <a href="https://github.com/bradleyhop" rel="noreferrer noopener" target="_blank">
+      <a
+        href="https://github.com/bradleyhop"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
         <v-hover v-slot="{ hover }">
           <span
             class="white--text"
-            :class="hover ? 'text-decoration-underline' : 'text-decoration-none'"
+            :class="
+              hover ? 'text-decoration-underline' : 'text-decoration-none'
+            "
           >
             bradley smith&nbsp;&copy;&nbsp;{{ new Date().getFullYear() }}
           </span>
