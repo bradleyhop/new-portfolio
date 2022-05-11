@@ -7,6 +7,7 @@ import fCC from "@/assets/data/fcc-data.js";
 import extra from "@/assets/data/extra-data.js";
 // load only the icons we need!
 import { mdiFire } from "@mdi/js";
+import { mdiOpenInNew } from "@mdi/js";
 
 export default {
   name: "Portfolio",
@@ -21,6 +22,7 @@ export default {
     extraData: extra, // extracurricular data
     // mdi icons
     mdiFire,
+    mdiOpenInNew,
   }),
 };
 </script>
@@ -80,9 +82,50 @@ export default {
     <v-row>
       <v-col cols="12" md="6" offset-md="3">
         <a
+          href="https://frontendmentor.io"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <h3>
+            <span class="fmText">Frontend Mentor</span
+            ><img
+              src="../assets/frontend-mentor-seeklogocom.svg"
+              alt="frontend mentor icon"
+              class="fmIcon"
+            />
+          </h3>
+        </a>
+        <p class="heading-copy">
+          This community-based learning platform helps developers learn and hone
+          their skills with real-world frontend projects. With my premium acess,
+          I choose and build projects using a professional design file,
+          <a
+            href="https://figma.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="figma-link"
+            >Figma</a
+          >
+          in my case, to create the site.
+        </p>
+        <p>
+          <a
+            href="https:/frontendmentor.io/profile/bradleyhop"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="fm-port"
+            >Find my Frontend Mentor portofolio here<v-icon
+              size="1.75rem"
+              class="fm-port-icon"
+              >{{ mdiOpenInNew }}</v-icon
+            >
+          </a>
+        </p>
+        <!-- freecodecamp -->
+        <a
           href="https://freecodecamp.org"
           target="_blank"
-          rel="norefferer noopener"
+          rel="noreferrer noopener"
         >
           <h3 class="fcc-color">
             freeCodeCamp
@@ -125,8 +168,44 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.fmText {
+  color: rgb(62, 84, 163);
+  margin-right: 1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.fmIcon {
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.figma-link {
+  color: rgb(162, 89, 255);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.fm-port {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.fm-port-icon {
+  color: rgb(62, 84, 163);
+}
+
 .fcc-color {
   color: #00641f;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .fcc-icon {
