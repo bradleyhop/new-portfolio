@@ -20,21 +20,15 @@ export default {
       type: Boolean,
       default: false,
     },
-    drawerLink: {
-      type: Boolean,
-      default: false,
-    },
   },
 };
 </script>
 
 <template>
   <div>
-    <router-link
-      :to="{ name: 'Home' }"
-    >
+    <router-link :to="{ name: 'Home' }">
       <v-btn text height="100%" width="100%" class="pa-0">
-        <v-list-item :link="drawerLink">
+        <v-list-item>
           <v-list-item-action>
             <v-icon color="secondary">
               {{ mdiHome }}
@@ -50,11 +44,9 @@ export default {
       </v-btn>
     </router-link>
 
-    <router-link
-      :to="{ name: 'About' }"
-    >
+    <router-link :to="{ name: 'About' }">
       <v-btn text height="100%" width="100%" class="pa-0">
-        <v-list-item :link="drawerLink">
+        <v-list-item>
           <v-list-item-action>
             <v-icon color="secondary">
               {{ mdiCardsHeart }}
@@ -69,11 +61,9 @@ export default {
       </v-btn>
     </router-link>
 
-    <router-link
-      :to="{ name: 'Portfolio' }"
-    >
+    <router-link :to="{ name: 'Portfolio' }">
       <v-btn text height="100%" width="100%" class="pa-0">
-        <v-list-item :link="drawerLink">
+        <v-list-item>
           <v-list-item-action>
             <v-icon color="secondary">
               {{ mdiCodeTags }}
@@ -88,11 +78,9 @@ export default {
       </v-btn>
     </router-link>
 
-    <router-link
-      :to="{ name: 'Contact' }"
-    >
+    <router-link :to="{ name: 'Contact' }">
       <v-btn text height="100%" width="100%" class="pa-0">
-        <v-list-item :link="drawerLink">
+        <v-list-item>
           <v-list-item-action>
             <v-icon color="secondary">
               {{ mdiEmail }}
@@ -110,4 +98,9 @@ export default {
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+.v-btn {
+  // over-ride Vueitfy all caps
+  text-transform: initial;
+}
+</style>

@@ -35,7 +35,7 @@ export default {
     color="primaryLight"
     hide-overlay
   >
-    <MenuList class="mt-8" :drawerLink="true" />
+    <MenuList class="mt-8" />
   </v-navigation-drawer>
 </template>
 
