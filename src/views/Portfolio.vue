@@ -97,7 +97,7 @@ export default {
         </a>
         <p class="heading-copy">
           This community-based learning platform helps developers learn and hone
-          their skills with real-world frontend projects. With my premium acess,
+          their skills with real-world frontend projects. With premium access,
           I choose and build projects using a professional design file,
           <a
             href="https://figma.com"
@@ -106,7 +106,8 @@ export default {
             class="figma-link"
             >Figma</a
           >
-          in my case, to create the site.
+          in my case, to create the site. I can then ask for review and review
+          my peers' projects.
         </p>
         <p>
           <a
@@ -138,7 +139,7 @@ export default {
         <p class="heading-copy">
           I use freeCodeCamp as my primary source of learning and project
           building. Courses are designed to be taken in order starting with
-          basic html and css, to learning frontend and backend frameworks with
+          basic HTML and CSS, to learning frontend and backend frameworks with
           javascript.
         </p>
         <p class="heading-copy">
