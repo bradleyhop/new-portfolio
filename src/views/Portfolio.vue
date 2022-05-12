@@ -111,7 +111,7 @@ export default {
         </p>
         <p>
           <a
-            href="https:/frontendmentor.io/profile/bradleyhop"
+            href="https://frontendmentor.io/profile/bradleyhop"
             target="_blank"
             rel="noreferrer noopener"
             class="fm-port"
