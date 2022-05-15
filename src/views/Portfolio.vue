@@ -110,12 +110,11 @@ export default {
           my peers' projects. Links to my completed projects and source code
           can be found on my profile.
         </p>
-        <p>
+        <p class="fm-link-copy">
           <a
             href="https://frontendmentor.io/profile/bradleyhop"
             target="_blank"
             rel="noreferrer noopener"
-            class="fm-port"
             >Find my Frontend Mentor portofolio here<v-icon
               size="1.5rem"
               class="fm-port-icon"
@@ -193,7 +192,8 @@ export default {
   }
 }
 
-.fm-port {
+.fm-link-copy >* {
+  color: rgb(62, 84, 163);
   &:hover {
     text-decoration: underline;
   }
