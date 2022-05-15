@@ -87,18 +87,18 @@ export default {
           rel="noreferrer noopener"
         >
           <h3>
-            <span class="fmText">Frontend Mentor</span
-            ><img
+            <img
               src="../assets/frontend-mentor-seeklogocom.svg"
               alt="frontend mentor icon"
               class="fmIcon"
             />
+            <span class="fmText">Frontend Mentor</span>
           </h3>
         </a>
         <p class="heading-copy">
           This community-based learning platform helps developers learn and hone
-          their skills with real-world frontend projects. With premium access,
-          I choose and build projects using a professional design file,
+          their skills with real-world frontend projects. With premium access, I
+          choose and build projects using a professional design file,
           <a
             href="https://figma.com"
             target="_blank"
@@ -107,7 +107,8 @@ export default {
             >Figma</a
           >
           in my case, to create the site. I can then ask for review and review
-          my peers' projects.
+          my peers' projects. Links to my completed projects and source code
+          can be found on my profile.
         </p>
         <p>
           <a
@@ -116,7 +117,7 @@ export default {
             rel="noreferrer noopener"
             class="fm-port"
             >Find my Frontend Mentor portofolio here<v-icon
-              size="1.75rem"
+              size="1.5rem"
               class="fm-port-icon"
               >{{ mdiOpenInNew }}</v-icon
             >
@@ -131,7 +132,7 @@ export default {
           <h3 class="fcc-color">
             freeCodeCamp
             <!-- home-made freeCodeCamp icon using material icon fire and some css trickery -->
-            &nbsp;&lpar;
+            &lpar;
             <v-icon class="fcc-icon">{{ mdiFire }}</v-icon>
             &rpar;
           </h3>
@@ -179,12 +180,13 @@ export default {
 }
 
 .fmIcon {
-  height: 1.1rem;
-  width: 1.1rem;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.25rem;
 }
 
 .figma-link {
-  color: rgb(162, 89, 255);
+  color: #a259ff;
 
   &:hover {
     text-decoration: underline;
@@ -199,6 +201,8 @@ export default {
 
 .fm-port-icon {
   color: rgb(62, 84, 163);
+  margin-left: 0.25rem;
+  vertical-align: bottom;
 }
 
 .fcc-color {
